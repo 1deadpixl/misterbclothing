@@ -1,0 +1,5 @@
+Questions for Thom:
+  ✔ How do I do a custom header image based on the page slug? @done (13-11-09 12:18)
+  ✔ How do I do a dynamic dropdown menu based on the recent articles? @done (13-11-09 12:18)
+  ✔ How do I declare which slug (i.e. 'fashion') is the "blog"? @done (13-11-09 12:14)
+  ✔ Declare $brands as a global array or at least get access to it in front-page.php from header.php (use include()?) @done (13-11-09 12:11)

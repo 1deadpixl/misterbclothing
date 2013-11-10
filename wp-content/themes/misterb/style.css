@@ -1,0 +1,343 @@
+/******************************************************************
+Theme Name: Mister B
+Description: The custom theme for Mister B
+Author: Philippe Enzler
+Author URI: http://www.psenzler.com
+******************************************************************/
+
+/*==================================
+=            Font Faces            =
+==================================*/
+@font-face {
+    font-family: 'eurostilebold';
+    src: url('fonts/eurostile-bold-webfont.eot');
+    src: url('fonts/eurostile-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/eurostile-bold-webfont.woff') format('woff'),
+         url('fonts/eurostile-bold-webfont.ttf') format('truetype'),
+         url('fonts/eurostile-bold-webfont.svg#eurostilebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostiledemi';
+    src: url('fonts/eurostile-demi-webfont.eot');
+    src: url('fonts/eurostile-demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/eurostile-demi-webfont.woff') format('woff'),
+         url('fonts/eurostile-demi-webfont.ttf') format('truetype'),
+         url('fonts/eurostile-demi-webfont.svg#eurostiledemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostileitalic';
+    src: url('fonts/eurostile-oblique-webfont.eot');
+    src: url('fonts/eurostile-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/eurostile-oblique-webfont.woff') format('woff'),
+         url('fonts/eurostile-oblique-webfont.ttf') format('truetype'),
+         url('fonts/eurostile-oblique-webfont.svg#eurostileitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostile';
+    src: url('fonts/eurostile-webfont.eot');
+    src: url('fonts/eurostile-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/eurostile-webfont.woff') format('woff'),
+         url('fonts/eurostile-webfont.ttf') format('truetype'),
+         url('fonts/eurostile-webfont.svg#eurostile') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*-----  End of Font Faces  ------*/
+
+/*=====================================
+=            Media Queries            =
+=====================================*/
+
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:980px) {
+}
+@media (min-width:1200px) { /* hi-res laptops and desktops */ }
+
+/*-----  End of Media Queries  ------*/
+
+
+
+/*==============================
+=            Global            =
+==============================*/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+	-webkit-padding-end: 0;
+}
+body {
+	background-color: #E8EBED;
+	font-family: 'eurostile', sans-serif;
+	margin: 0 auto;
+	
+	min-width: 980px;
+}
+div.content {
+	position: relative;
+	width: 980px;
+	margin: 160px auto 0 auto;
+}
+a, a:visited, a:active {
+	text-decoration: none;
+	color: #055067;
+}
+a:hover {
+	text-decoration: underline;
+}
+em, i {
+	font-family: 'eurostileitalic';
+}
+strong, b {
+	font-family: 'eurostilebold'
+}
+p>strong, p>b {
+	font-family: 'eurostiledemi'
+}
+
+/*-----  End of Global  ------*/
+
+
+/*==============================
+=            Header            =
+==============================*/
+header {
+	width: 100%; /* full-width - padding */
+	position: fixed;
+	top: 0;
+	z-index: 80;
+	background-color: #f9f9f9;
+	padding-top: 20px;
+}
+header #header-top {
+	width: 1200px;
+	margin: 0 auto;
+}
+#logo {
+	margin-left: 50px;
+}
+#logo img {
+	vertical-align: -15px;
+}
+nav {
+	display: inline-block;
+	font-family: 'eurostile';
+}
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	margin-left: 35px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+}
+nav li:first-child {
+	margin-left: 0;
+}
+nav li:hover {
+	color: #E8EBED;
+	background-color: #055067;
+}
+nav a, nav a:visited, nav a:active, nav a:hover {
+	text-decoration: none;
+	color: inherit;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+nav li.current-menu-item {
+	border-bottom: 3px solid #055067;
+}
+nav li.current-menu-item:hover {
+	background-color: inherit;
+	color: inherit;
+}
+nav li.current-menu-item:hover a {
+	cursor: default;
+	text-decoration: none;
+}
+#brands-pager {
+	z-index: 90;
+	background-color: #fff;
+	/* width: 1160px; full width - padding */
+	width: 100% !important;
+	padding-bottom: 4px;
+	margin-top: 25px;
+	-webkit-transition: background-color 150ms ease;
+	   -moz-transition: background-color 150ms ease;
+	    -ms-transition: background-color 150ms ease;
+	     -o-transition: background-color 150ms ease;
+	        transition: background-color 150ms ease;
+	/*white-space: nowrap;*/
+}
+#brands-pager-images img {
+	display: inline-block;
+	padding-top: 7px;
+	margin-left: 35px;
+	border-top: 3px solid #fff;
+}
+#brands-pager-images img:first-child {
+	margin-left: 0;
+}
+#brands-pager-images img.active, #brands-pager-images img:hover {
+	border-top: 3px solid #055067;
+}
+
+#brands-pager .carouselnav {
+	position: absolute;
+	height: 100%;
+	width: 35px;
+	line-height: 50px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+#brands-pager .carouselnav#prev {
+	left: 0;
+	text-align: left;
+}
+#brands-pager .carouselnav#next {
+	right: 0;
+	text-align: right;
+}
+/*-----  End of Header  ------*/
+
+/*==============================
+=            Footer            =
+==============================*/
+
+footer {
+	border-top: 1px solid #000000;
+	margin-top: 50px;
+	padding: 0 10%;
+	white-space: nowrap;
+}
+
+footer div {
+	display: inline-block;
+	margin-left: 110px;
+	margin-top: 10px;
+	vertical-align: top;
+}
+footer div:first-child {
+	margin-left: 0;
+}
+
+footer h1 {
+	font-family: 'eurostiledemi';
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+footer form>* {
+	display: block;
+}
+footer input {
+	border: #65868C 1px solid;
+	background-color: #DAE4EB;
+	border-radius: 2px;
+	padding: 3px 6px;
+	width: 190px;
+	margin-bottom: 6px;
+}
+
+/*-----  End of Footer  ------*/
+
+/*=================================
+=            Home Page            =
+=================================*/
+#brands-slideshow {
+	position: relative;
+	margin-top: 148px;
+	padding: 0;
+	*zoom: 1;
+}
+#brands-slideshow img {
+	width: 100%;
+	display: block;
+}
+#home-description {
+	width: 980px;
+	margin: 20px auto;
+}
+/*-----  End of Home Page  ------*/
+
+/*======================================
+=            Page: Brand Details             =
+======================================*/
+
+.single-brand #brand-details {
+	float: left;
+	min-width: 365px;
+}
+.single-brand #brand-details {
+	font-size: 24px;
+}
+.single-brand #brand-details>p {
+	width: 365px;
+}
+.single-brand p#brand-description {
+	position: absolute;
+	bottom: 0;
+	font-size: 16px;
+}
+.single-brand a#brand-url {
+	display: block;
+	margin-bottom: 8px;
+}
+.single-brand img#brand-detail {
+	width:595px;
+	height:auto;
+	margin-left: 15px;
+}
+.single-brand img#brand-logo {
+	max-width: 315px;
+}
+
+/*-----  End of Page: Brand Details  ------*/
+
+/*===============================================
+=           Template: Full Width Page           =
+================================================*/
+
+.page-template-template-full-php .content h1 {
+	font-size: 16px;
+	font-family: 'eurostilebold';
+	margin-top: 24px;
+}
+.page-template-template-full-php .content h1:first-child {
+	margin-top: 0;
+}
+.page-template-template-full-php .content p {
+	font-family: 'eurostile';
+	font-size: 16px;
+	margin-top: 6px;
+}
+.page-template-template-full-php .content h1+p,
+.page-template-template-full-php .content .section-image+p {
+	margin-top: 0;
+}
+.page-template-template-full-php .content img.section-image {
+	width: 100%;
+	height: auto;
+	margin: 16px 0;
+}
+.page-template-template-full-php .content img.floatright {
+	float: right;
+}
+
+/*-----  End of Template: Full Width Page ----*/
+

@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": "wp-content/themes/misterb",
+			"name": "Mister B",
+			"file_exclude_patterns": ["*.md"]
+		}
+	]
+}
