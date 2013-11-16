@@ -50,10 +50,10 @@
 					<div class="pager-nav" id="prev">&lt;</div>
 					<div id="brands-pager-images">
 					<?php
-					foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $brand) {
-						//echo '<a data-slide-index="'.$key.'" href="'.get_permalink($brand->ID).'" title="'.$brand->post_title.'">';
+					foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $index=>$brand) {
+						echo '<a data-slide-index="'.$index.'" href="'.get_permalink($brand->ID).'" title="'.$brand->post_title.'">';
 						echo get_the_post_thumbnail($brand->ID,'full', array('alt'=>$brand->post_title));
-						//echo '</a>';
+						echo '</a>';
 					}
 					?>
 					</div>

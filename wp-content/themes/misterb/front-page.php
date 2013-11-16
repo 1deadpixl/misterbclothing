@@ -4,7 +4,7 @@ get_header();
 <div id="brands-slideshow">
 	<?php
 	foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $brand) {
-		echo get_image('slideshow',1,1,1,$brand->ID);
+		echo get_image('slideshow',1,1,1,$brand->ID,NULL,array('alt'=>$brand->post_title));
 	}
 	?>
 </div>

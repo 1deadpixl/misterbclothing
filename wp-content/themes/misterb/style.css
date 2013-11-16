@@ -185,16 +185,16 @@ nav li.current-menu-item:hover a {
 	        transition: background-color 150ms ease;
 	/*white-space: nowrap;*/
 }
-#brands-pager-images img {
+#brands-pager-images a {
 	display: inline-block;
 	padding-top: 7px;
 	margin-left: 35px;
 	border-top: 3px solid #fff;
 }
-#brands-pager-images img:first-child {
+#brands-pager-images a:first-child {
 	margin-left: 0;
 }
-#brands-pager-images img.active, #brands-pager-images img:hover {
+#brands-pager-images a.active, #brands-pager-images a:hover {
 	border-top: 3px solid #055067;
 }
 

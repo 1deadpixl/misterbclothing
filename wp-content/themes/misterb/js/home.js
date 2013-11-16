@@ -16,21 +16,39 @@ jQuery(document).ready(function($) {
 	).click(function (event) {
 		window.location = this.href;
 	});*/
+	
 
+	//
 	$('#brands-slideshow').cycle({
 	    timeout: 		1000,
 	    loader: 		true,
 	    pauseOnHover: 	true,
 	    log: 			true
 	});
+	$('#brands-pager-images').cycle({
+		fx:  				'carousel',
+		slides: 			'> a',
+		timeout: 			0,
+		slideActiveClass: 	'active',
+		carouselVisible:	10,
+	    log: 				true
+	});
+	$('#brands-pager-images').on('cycle-before',function(e,opts) {
+		$('#brands-pager-images .active').removeClass('active');
+	});
+	$('#brands-pager-images').on('cycle-after',function(e,opts) {
+		// console.log(opts.currSlide);
+		console.log($('#brands-pager-images .active').attr('title'));
+	});
 	$('#brands-slideshow').on('cycle-before', function(e, opts) {
 	    // advance the brands pager
-	    console.log('going to:'+opts.currSlide);
-	    $('#brands-pager').cycle('goto', opts.currSlide);
+	    //console.log(opts);
+	    // console.log('going to: '+opts.nextSlide);
+	    $('#brands-pager-images').cycle('goto', opts.nextSlide);
 	});
-
-	$('#nav-brands a').hover(function(event) { //change slide to hovered brand
-		$('.cycle-slideshow').cycle('goto');
+	$('#brands-pager-images a').hover(function(event) { //change slide to hovered brand
+		//console.log('hovered on: '+$(this).data('slide-index'));
+		$('#brands-slideshow').cycle('goto',$(this).data('slide-index'));
 	}).click(function (event) {
 		window.location = this.href;
 	});

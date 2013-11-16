@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"cyc",
+				"cycle-js"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"print",
+				"print_r	Print an array"
+			],
+			[
 				"bor",
 				"border-top"
 			],
@@ -356,10 +368,6 @@
 				"imgtitle"
 			],
 			[
-				"print",
-				"print_r"
-			],
-			[
 				"UT",
 				"UTF-8"
 			],
@@ -506,56 +514,16 @@
 			[
 				"y",
 				"yScrollEnabled"
-			],
-			[
-				"tr",
-				"trunkScrollYStep"
-			],
-			[
-				"bord",
-				"border"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/misterb/style.css",
+			"file": "wp-content/themes/misterb/front-page.php",
 			"settings":
 			{
-				"buffer_size": 7675,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/page-custom.php",
-			"settings":
-			{
-				"buffer_size": 2149,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/single-brand.php",
-			"settings":
-			{
-				"buffer_size": 807,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/!questions.tasks",
-			"settings":
-			{
-				"buffer_size": 215,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/template-full.php",
-			"settings":
-			{
-				"buffer_size": 206,
+				"buffer_size": 388,
 				"line_ending": "Windows"
 			}
 		},
@@ -563,15 +531,7 @@
 			"file": "wp-content/themes/misterb/js/home.js",
 			"settings":
 			{
-				"buffer_size": 408,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/front-page.php",
-			"settings":
-			{
-				"buffer_size": 332,
+				"buffer_size": 920,
 				"line_ending": "Windows"
 			}
 		},
@@ -579,15 +539,7 @@
 			"file": "wp-content/themes/misterb/header.php",
 			"settings":
 			{
-				"buffer_size": 2318,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/functions.php",
-			"settings":
-			{
-				"buffer_size": 6189,
+				"buffer_size": 2416,
 				"line_ending": "Unix"
 			}
 		},
@@ -595,7 +547,50 @@
 			"file": "wp-content/themes/misterb/library/js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 3307,
+				"buffer_size": 3863,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php get_header();\nif (have_posts()) : while (have_posts()) : the_post(); ?>\n\n<div class=\"content\">\n	<div id=\"brand-details\">\n		<?=get_image('logo',1,1,1,NULL,NULL,array('id'=>'brand-logo')); ?>\n		<? $url = get('website'); if ($url) echo '<a id=\"brand-url\" href=\"http://'.get('website').'\" target=\"_blank\">'.get('website').'</a>'; ?>\n		<? $loc = get('location'); if ($loc) echo '<p id=\"brand-location\">'.get('location').'</p>' ?>\n		<p id=\"brand-description\"><?=get_the_content(); ?></p>\n	</div>\n	<?\n		$image = get_image('detail_image',1,1,1,NULL,NULL,array('id'=>'brand-detail'));\n		if ($image) { echo $image; }\n		else { echo get_image('slideshow',1,1,1,NULL,NULL,array('id'=>'brand-detail')); }\n	?>\n	<!-- TODO: List articles that have the brand as a tag -->\n</div>\n\n<?php endwhile; endif;\nget_footer(); ?>",
+			"file": "wp-content/themes/misterb/single-brand.php",
+			"file_size": 826,
+			"file_write_time": 130282427760283193,
+			"settings":
+			{
+				"buffer_size": 807,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/style.css",
+			"settings":
+			{
+				"buffer_size": 8038,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/functions.php",
+			"settings":
+			{
+				"buffer_size": 6191,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/library/bones.php",
+			"settings":
+			{
+				"buffer_size": 13424,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/style.css.bxslider",
+			"settings":
+			{
+				"buffer_size": 8015,
 				"line_ending": "Unix"
 			}
 		}
@@ -603,9 +598,29 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 311.0,
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"syn css",
+				"Set Syntax: CSS"
+			],
+			[
+				"css",
+				"Tidy CSS"
+			],
+			[
+				"minif",
+				"Clientside Minify Javascript/CSS"
+			],
 			[
 				"comm fo",
 				"Snippet: Comment - Section footer comment"
@@ -663,10 +678,6 @@
 				"Set Syntax: XML"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"instal",
 				"Package Control: Install Package"
 			],
@@ -691,10 +702,6 @@
 				"Indentation: Reindent Lines"
 			],
 			[
-				"css",
-				"Tidy CSS"
-			],
-			[
 				"snippet each",
 				"Snippet: $.each()"
 			],
@@ -708,10 +715,6 @@
 			],
 			[
 				"install ",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
 				"Package Control: Install Package"
 			],
 			[
@@ -864,22 +867,40 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/localhost/wordpress/wp-content/themes/fungblat/library/bones.php",
+		"/C/wamp/www/localhost/wordpress/wp-content/themes/fungblat/functions.php",
+		"/C/wamp/www/tumblr.dev/groupscrew/index.php",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Program Files (x86)/Git/etc/gitconfig",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.min.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.carousel.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.custom.min.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/custom-post-type.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/functions.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/bones.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/style.css",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Phil/AppData/Local/Temp/Temp1_carouFredSel-6.2.1.zip/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js",
+		"/C/Users/Phil/AppData/Local/Temp/Temp1_carouFredSel-6.2.1.zip/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/!questions.tasks",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/PHP/print_r.sublime-snippet",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-team.php",
 		"/C/wamp/www/misterbclothing.dev/misterbclothing.sublime-project",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/home.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/js/scripts.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-full.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-brand.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-custom.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-event.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-events.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-media.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-team.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-services.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-custom_type.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/front-page.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-brand.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-custom.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-brand_details.php",
 		"/C/wamp/bin/php/php5.4.12/php.ini",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-brand_details",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/home.js",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/bones.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/functions.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/footer.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/header.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/404.php",
@@ -919,8 +940,6 @@
 		"/C/Users/Phil/Music/Soma FM Stations/somafm.xspf",
 		"/C/Users/Phil/Music/Soma FM Stations/beatblender.pls",
 		"/C/Users/Phil/Music/Soma FM Stations/defcon.xspf",
-		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
 		"/C/Users/Phil/Music/Soma FM Stations/events.pls",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Ciapre Color Scheme/Ciapre.tmTheme",
@@ -975,23 +994,7 @@
 		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/index 2.php",
 		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/http.php",
 		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/functions.wp-styles.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/formatting.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/functions 2.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/wp-config.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/loop.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/custom-homepage.php",
-		"/C/Users/Phil/Dropbox/School/13F/ID 2/Mister B Redesign/Events/img_9861.jpg",
-		"/C/Users/Phil/Dropbox/School/12-Application/Portfolio/Photography/index.php",
-		"/C/Users/Phil/Downloads/jquery.preload-1.0.8.js",
-		"/C/Users/Phil/AppData/Local/Temp/Temp1_queryLoader.zip/js/queryLoader.js",
-		"/C/Users/Phil/Documents/!Projects/Simon Vetter/hours.txt",
-		"/C/Users/Phil/Documents/!Projects/Mister B/email/131023/joint.html",
-		"/C/Users/Phil/Documents/!Projects/Mister B/email/131023/misterb.html",
-		"/C/Users/Phil/Google Drive/IxD 101 - Group Project/Final/Demo/index.html",
-		"/C/Users/Phil/Google Drive/IxD 101 - Group Project/Wireframes/Demo/housing-detail.html",
-		"/C/Users/Phil/Google Drive/IxD 101 - Group Project/Wireframes/Demo/housing.html",
-		"/C/Users/Phil/Google Drive/IxD 101 - Group Project/Final/Demo/pages/housing.html",
-		"/C/Users/Phil/Google Drive/IxD 101 - Group Project/Final/Demo/pages/housing-detail.html"
+		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/formatting.php"
 	],
 	"find":
 	{
@@ -1010,6 +1013,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"page-nav",
+			"page",
+			"\\",
+			".bx-wrapper",
+			"slidesho",
+			"ul",
+			"nav-brands",
+			"nav-brands-container",
+			"carouselnav",
+			"100",
+			"snippet",
+			"snipper",
+			"span",
+			"script",
+			"regist",
+			"script",
+			"$index_id",
 			"h1",
 			"172px;",
 			".header",
@@ -1120,24 +1140,7 @@
 			"titleFormat",
 			"title-inside",
 			".fancybox-title-inside-wrap .exif li {",
-			"title-inside-wrap",
-			"\\",
-			"stylesheet",
-			"2013",
-			"stylesheet_url",
-			"stylesheet",
-			"enque",
-			"v=",
-			"stylesheet",
-			"style/css",
-			"css",
-			"stylesheet",
-			"css",
-			"images/",
-			"http://www.standoutinternational.com/wp-content/uploads/2013/09/",
-			"h2",
-			"ffffff",
-			"EFEFEF"
+			"title-inside-wrap"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1175,150 +1178,45 @@
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/misterb/style.css",
+					"file": "wp-content/themes/misterb/front-page.php",
 					"settings":
 					{
-						"buffer_size": 7675,
+						"buffer_size": 388,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3496,
-								3496
+								388,
+								388
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1260.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/misterb/page-custom.php",
-					"settings":
-					{
-						"buffer_size": 2149,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								73,
-								51
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/misterb/single-brand.php",
-					"settings":
-					{
-						"buffer_size": 807,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								759,
-								759
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/misterb/!questions.tasks",
-					"settings":
-					{
-						"buffer_size": 215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/misterb/template-full.php",
-					"settings":
-					{
-						"buffer_size": 206,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								206,
-								206
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "wp-content/themes/misterb/js/home.js",
 					"settings":
 					{
-						"buffer_size": 408,
+						"buffer_size": 920,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								310,
-								310
+								557,
+								557
 							]
 						],
 						"settings":
@@ -1333,19 +1231,73 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "wp-content/themes/misterb/front-page.php",
+					"buffer": 2,
+					"file": "wp-content/themes/misterb/header.php",
 					"settings":
 					{
-						"buffer_size": 332,
+						"buffer_size": 2416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								332,
-								332
+								2058,
+								2058
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 280.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/misterb/library/js/scripts.js",
+					"settings":
+					{
+						"buffer_size": 3863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2373,
+								2373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/misterb/single-brand.php",
+					"settings":
+					{
+						"buffer_size": 807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								696,
+								696
 							]
 						],
 						"settings":
@@ -1355,51 +1307,82 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/misterb/style.css",
+					"settings":
+					{
+						"buffer_size": 8038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6359,
+								6359
+							],
+							[
+								6446,
+								6446
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3173.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/misterb/functions.php",
+					"settings":
+					{
+						"buffer_size": 6191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								689,
+								689
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 140.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "wp-content/themes/misterb/header.php",
+					"file": "wp-content/themes/misterb/library/bones.php",
 					"settings":
 					{
-						"buffer_size": 2318,
+						"buffer_size": 13424,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1521,
-								1521
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "wp-content/themes/misterb/functions.php",
-					"settings":
-					{
-						"buffer_size": 6189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								5710,
+								5710
 							]
 						],
 						"settings":
@@ -1414,28 +1397,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "wp-content/themes/misterb/library/js/scripts.js",
+					"buffer": 8,
+					"file": "wp-content/themes/misterb/style.css.bxslider",
 					"settings":
 					{
-						"buffer_size": 3307,
+						"buffer_size": 8015,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1787,
-								1787
+								6462,
+								6331
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 3201.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1477,6 +1460,10 @@
 	"output.exec":
 	{
 		"height": 152.0
+	},
+	"output.git":
+	{
+		"height": 94.0
 	},
 	"replace":
 	{
