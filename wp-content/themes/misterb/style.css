@@ -183,34 +183,33 @@ nav li.current-menu-item:hover a {
 	    -ms-transition: background-color 150ms ease;
 	     -o-transition: background-color 150ms ease;
 	        transition: background-color 150ms ease;
-	/*white-space: nowrap;*/
+	white-space: nowrap;
 }
 #brands-pager-images a {
 	display: inline-block;
 	padding-top: 7px;
 	margin-left: 35px;
 	border-top: 3px solid #fff;
-}
-#brands-pager-images a:first-child {
-	margin-left: 0;
+	position: relative;
 }
 #brands-pager-images a.active, #brands-pager-images a:hover {
 	border-top: 3px solid #055067;
 }
 
-#brands-pager .carouselnav {
+#brands-pager .pager-nav {
 	position: absolute;
-	height: 100%;
+	top: 60px;
+	height: 35px;
 	width: 35px;
 	line-height: 50px;
 	padding: 0 10px;
 	cursor: pointer;
 }
-#brands-pager .carouselnav#prev {
+#brands-pager .pager-nav#prev {
 	left: 0;
 	text-align: left;
 }
-#brands-pager .carouselnav#next {
+#brands-pager .pager-nav#next {
 	right: 0;
 	text-align: right;
 }

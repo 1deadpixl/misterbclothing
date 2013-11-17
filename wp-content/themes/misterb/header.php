@@ -47,7 +47,7 @@
 					</nav>
 				</div>
 				<div id="brands-pager">
-					<div class="pager-nav" id="prev">&lt;</div>
+					<div class="pager-nav" id="prev">PREV</div>
 					<div id="brands-pager-images">
 					<?php
 					foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $index=>$brand) {
@@ -57,6 +57,6 @@
 					}
 					?>
 					</div>
-					<div class="pager-nav" id="next">&gt;</div>
+					<div class="pager-nav" id="next">NEXT</div>
 				</div>
 			</header> <?php // end header ?>
