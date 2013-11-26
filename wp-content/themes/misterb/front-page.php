@@ -11,7 +11,7 @@ get_header();
 <div id="home-container">
 	<div id="home-description">
 		<?php
-		echo get_posts(array('pagename'=>'home','post_type'=>'page'))[0]->post_content;
+		echo get_post(get_page_by_title('home'))->post_content;
 		?>
 	</div>
 </div>

@@ -520,10 +520,13 @@
 	"buffers":
 	[
 		{
+			"contents": "<?php \nget_header();\n?>\n<div id=\"brands-slideshow\">\n	<?php\n	foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $brand) {\n		echo get_image('slideshow',1,1,1,$brand->ID,NULL,array('alt'=>$brand->post_title));\n	}\n	?>\n</div>\n<div id=\"home-container\">\n	<div id=\"home-description\">\n		<?php echo get_post(get_page_by_title('home'))->post_content; ?>\n	</div>\n</div>\n\n<?php get_footer(); ?>",
 			"file": "wp-content/themes/misterb/front-page.php",
+			"file_size": 459,
+			"file_write_time": 130299261569273443,
 			"settings":
 			{
-				"buffer_size": 464,
+				"buffer_size": 435,
 				"line_ending": "Windows"
 			}
 		},
@@ -544,6 +547,14 @@
 			}
 		},
 		{
+			"file": "wp-content/themes/misterb/archive-team.php",
+			"settings":
+			{
+				"buffer_size": 738,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "wp-content/themes/misterb/js/home.js",
 			"settings":
 			{
@@ -560,22 +571,6 @@
 			}
 		},
 		{
-			"file": "wp-content/themes/misterb/template-full.php",
-			"settings":
-			{
-				"buffer_size": 246,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/footer.php",
-			"settings":
-			{
-				"buffer_size": 1048,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "wp-content/themes/misterb/functions.php",
 			"settings":
 			{
@@ -587,7 +582,7 @@
 			"file": "wp-content/themes/misterb/style.css",
 			"settings":
 			{
-				"buffer_size": 9604,
+				"buffer_size": 9748,
 				"line_ending": "Unix"
 			}
 		}
@@ -880,6 +875,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/PHP/wordpress-get_page.sublime-snippet",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/archive-team.html",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-full.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/footer.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/functions.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/bones.php",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
@@ -911,7 +910,6 @@
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/PHP/print_r.sublime-snippet",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-team.php",
 		"/C/wamp/www/misterbclothing.dev/misterbclothing.sublime-project",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-full.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-custom.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-event.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-events.php",
@@ -922,7 +920,6 @@
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-brand_details.php",
 		"/C/wamp/bin/php/php5.4.12/php.ini",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-brand_details",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/footer.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/header.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/404.php",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preview.sublime-settings",
@@ -1005,9 +1002,7 @@
 		"/C/Users/Phil/Documents/!Projects/Simon Vetter/Pages/header.php",
 		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/header.php",
 		"/C/Users/Phil/Dropbox/School/13F/ID 2/id2classfolder/thom/benandjerrys/header.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/header 2.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/style.css",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/theme.php"
+		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/header 2.php"
 	],
 	"find":
 	{
@@ -1026,6 +1021,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".page-id-11",
 			"h1",
 			"my_attachments",
 			"title",
@@ -1152,8 +1148,7 @@
 			"=\"",
 			"opacity",
 			"visibility",
-			"25s",
-			"after"
+			"25s"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1186,7 +1181,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1194,15 +1189,15 @@
 					"file": "wp-content/themes/misterb/front-page.php",
 					"settings":
 					{
-						"buffer_size": 464,
+						"buffer_size": 435,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								60,
-								263
+								229,
+								229
 							]
 						],
 						"settings":
@@ -1255,8 +1250,8 @@
 						"selection":
 						[
 							[
-								329,
-								329
+								739,
+								0
 							]
 						],
 						"settings":
@@ -1272,6 +1267,33 @@
 				},
 				{
 					"buffer": 3,
+					"file": "wp-content/themes/misterb/archive-team.php",
+					"settings":
+					{
+						"buffer_size": 738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								625,
+								625
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "wp-content/themes/misterb/js/home.js",
 					"settings":
 					{
@@ -1298,7 +1320,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "wp-content/themes/misterb/library/js/scripts.js",
 					"settings":
 					{
@@ -1325,60 +1347,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "wp-content/themes/misterb/template-full.php",
-					"settings":
-					{
-						"buffer_size": 246,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								130,
-								130
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 6,
-					"file": "wp-content/themes/misterb/footer.php",
-					"settings":
-					{
-						"buffer_size": 1048,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								480,
-								480
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "wp-content/themes/misterb/functions.php",
 					"settings":
 					{
@@ -1406,23 +1375,22 @@
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "wp-content/themes/misterb/style.css",
 					"settings":
 					{
-						"buffer_size": 9604,
+						"buffer_size": 9748,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8199,
-								8199
+								7653,
+								7653
 							]
 						],
 						"settings":
@@ -1431,7 +1399,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5010.0,
+						"translation.y": 4560.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1467,7 +1435,7 @@
 		"cols":
 		[
 			0.0,
-			0.443533697632,
+			0.732544019429,
 			1.0
 		],
 		"rows":

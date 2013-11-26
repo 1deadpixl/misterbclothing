@@ -338,7 +338,7 @@ footer input {
 /*============================
 =         Page: Team         =
 ============================*/
-.page-id-11 .member {
+.post-type-archive-team .member {
 	position: relative;
 	display: inline-block;
 	width: 299px;
@@ -346,41 +346,41 @@ footer input {
 	margin-left: 35px; 
 	margin-bottom: 50px;
 }
-.page-id-11 .member:first-child,
-.page-id-11 .member:nth-child(4n) {
+.post-type-archive-team .member:first-child,
+.post-type-archive-team .member:nth-child(4n) {
 	margin-left: 0;
 }
-.page-id-11 .header * {
+.post-type-archive-team .header * {
 	font-size: 16px;
 	font-weight: normal;
 }
-.page-id-11 .header div {
+.post-type-archive-team .header div {
 	display: inline-block;
 	vertical-align: top;
 	height: 70px;
 }
-.page-id-11 .member img {
+.post-type-archive-team .member img {
 	margin-right: 8px;
 }
-.page-id-11 .name {
+.post-type-archive-team .name {
 	position: absolute;
 	top: 0;
 	line-height: 18px;
 }
-.page-id-11 .name span {
+.post-type-archive-team .name span {
 	display: block;
 }
-.page-id-11 .name-first {
+.post-type-archive-team .name-first {
 	font-family: 'eurostilebold';
 } 
-.page-id-11 .name-last {
+.post-type-archive-team .name-last {
 	font-family: 'eurostile';
 }
-.page-id-11 .header h2 {
+.post-type-archive-team .header h2 {
 	position: absolute;
 	top: 50px;
 }
-.page-id-11 .member p {
+.post-type-archive-team .member p {
 	float: left;
 	margin-top: 20px;
 	font-size: 14px;
