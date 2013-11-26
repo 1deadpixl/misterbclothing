@@ -8,10 +8,12 @@ get_header();
 	}
 	?>
 </div>
-<div id="home-description">
-	<?php
-	echo get_posts(array('pagename'=>'home','post_type'=>'page'))[0]->post_content;
-	?>
+<div id="home-container">
+	<div id="home-description">
+		<?php
+		echo get_posts(array('pagename'=>'home','post_type'=>'page'))[0]->post_content;
+		?>
+	</div>
 </div>
 
 

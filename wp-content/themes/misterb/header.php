@@ -11,7 +11,7 @@
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php echo get_bloginfo('name').wp_title(' : ',false);  ?></title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -47,8 +47,9 @@
 					</nav>
 				</div>
 				<div id="brands-pager">
-					<div class="pager-nav" id="prev">PREV</div>
+					<div class="pager-nav" id="prev"></div>
 					<div id="brands-pager-images">
+					<!-- center a fixed number of brand logos. modify js to check if the fixed number fits, if not -1 until they do -->
 					<?php
 					foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $index=>$brand) {
 						echo '<a data-slide-index="'.$index.'" href="'.get_permalink($brand->ID).'" title="'.$brand->post_title.'">';
@@ -57,6 +58,6 @@
 					}
 					?>
 					</div>
-					<div class="pager-nav" id="next">NEXT</div>
+					<div class="pager-nav" id="next"></div>
 				</div>
 			</header> <?php // end header ?>

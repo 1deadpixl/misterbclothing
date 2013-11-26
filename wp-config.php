@@ -80,6 +80,11 @@ define('WPLANG', '');
  */
 define('WP_DEBUG', false);
 
+//Disable Attachments plugin settings screen. It's for info purposes only.
+define( 'ATTACHMENTS_SETTINGS_SCREEN', false );
+//Disbale Attachmetns plugin defaul instance. Custom instances are defined in the theme's functions.php
+define( 'ATTACHMENTS_DEFAULT_INSTANCE', false );
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

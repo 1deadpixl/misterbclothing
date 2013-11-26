@@ -45,12 +45,69 @@ require_once( 'library/bones.php' ); // if you remove this, bones will break
 */
 // require_once( 'library/translation/translation.php' ); // this comes turned off by default
 
-/*======================================
-=            SITE CONSTANTS            =
-======================================*/
+
+/*==========  SITE CONTSTANTS  ==========*/
 define('FILES',get_template_directory_uri());
 
 
+/*==========  ALLOW UPLOAD OF CUSTOM MIME TYPES   ==========*/
+add_filter('upload_mimes', 'add_custom_upload_mimes');
+function add_custom_upload_mimes($existing_mimes){
+	$existing_mimes['ai'] = 'application/postscript'; //allow AI files
+	return $existing_mimes;
+}
+
+
+
+/*==========  CUSTOM EDITOR MODULES: Attachments  ==========*/
+
+//attachments module for 'Media Kit' page
+function media_kit( $attachments )
+{
+  $fields = array(
+    array(
+      'name'      => 'title',
+      'type'      => 'text',
+      'label'     => __( 'Title', 'attachments' )
+    ),
+    array(
+      'name'      => 'role',
+      'type'      => 'select',
+      'label'     => __( 'Role', 'attachments' ),
+      'meta'      => array(
+                      'allow_null'    => false,
+                      'multiple'      => false,
+                      'options'       => array(
+                            'photo'   => 'In-Store Photo',
+                            'logo_v'  => 'Vector Logo',
+                            'logo_r'  => 'Raster Logo'
+                        )
+                    )
+    ),
+  );
+  $args = array(
+    'label'         => 'Kit Files',
+    'post_type'      => 'page',
+    'position'      => 'normal',
+    'priority'      => 'high',
+    'filetype'      => null,
+    'append'        => true,
+    'button_text'   => __( 'Attach Files', 'attachments' ),
+    'modal_text'    => __( 'Attach', 'attachments' ),
+    'router'        => 'upload',
+    'fields'        => $fields
+  );
+
+  $attachments->register( 'media_kit', $args );
+}
+add_action( 'attachments_register', 'media_kit' );
+
+function media_kit_location_limit( $val )
+{
+    global $post;
+    return ( $post->post_title == 'Media Kit' ) ? true : false;
+}
+add_filter( 'attachments_location_media_kit', 'media_kit_location_limit' );
 
 
 /************* THUMBNAIL SIZE OPTIONS *************/

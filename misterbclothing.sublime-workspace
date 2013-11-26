@@ -4,6 +4,122 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"abs",
+				"absolute"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"page",
+				"page-id-11"
+			],
+			[
+				"euro",
+				"eurostile"
+			],
+			[
+				"comm",
+				"comm-section	Comment - Full section comment"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"change",
+				"changePager"
+			],
+			[
+				"prepend",
+				"prependTo	.prependTo()"
+			],
+			[
+				"remov",
+				"removeClass	.removeClass"
+			],
+			[
+				"ne",
+				"nextSlide"
+			],
+			[
+				"detac",
+				"detached"
+			],
+			[
+				"appen",
+				"appendTo	.appendTo()"
+			],
+			[
+				"brands",
+				"brands-pager"
+			],
+			[
+				"brand",
+				"brand_logos"
+			],
+			[
+				"scroll",
+				"scrollTo"
+			],
+			[
+				"scro",
+				"scrollTo"
+			],
+			[
+				"bra",
+				"brand_logos"
+			],
+			[
+				"off",
+				"offset	.offset"
+			],
+			[
+				"el",
+				"elements"
+			],
+			[
+				"wp_regist",
+				"wp_register_script"
+			],
+			[
 				"cyc",
 				"cycle-js"
 			],
@@ -14,10 +130,6 @@
 			[
 				"print",
 				"print_r	Print an array"
-			],
-			[
-				"bor",
-				"border-top"
 			],
 			[
 				"bo",
@@ -52,10 +164,6 @@
 				"eurostilebold"
 			],
 			[
-				"euro",
-				"eurostileitalic"
-			],
-			[
 				"border-",
 				"border-bottom"
 			],
@@ -80,16 +188,8 @@
 				"description"
 			],
 			[
-				"comm",
-				"comm-section-header	Comment - Section header comment"
-			],
-			[
 				"each",
 				"eachLeftMargin"
-			],
-			[
-				"brand",
-				"brands-pager"
 			],
 			[
 				"sli",
@@ -102,10 +202,6 @@
 			[
 				"marg",
 				"margin-bottom"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"quer",
@@ -160,10 +256,6 @@
 				"default"
 			],
 			[
-				"in",
-				"inherit"
-			],
-			[
 				"border-b",
 				"border-bottom"
 			],
@@ -194,10 +286,6 @@
 			[
 				"total",
 				"totalThumbsWidth"
-			],
-			[
-				"no",
-				"nowrap"
 			],
 			[
 				"st",
@@ -264,10 +352,6 @@
 				"thisLeft"
 			],
 			[
-				"appen",
-				"appendTo	.appendTo()"
-			],
-			[
 				"style",
 				"stylesheet"
 			],
@@ -292,10 +376,6 @@
 				"padding-left"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"border-bot",
 				"border-bottom-width"
 			],
@@ -306,10 +386,6 @@
 			[
 				"tras",
 				"transition	CSS - transition: ;"
-			],
-			[
-				"fon",
-				"font-size"
 			],
 			[
 				"font-",
@@ -438,82 +514,6 @@
 			[
 				"select",
 				"selected"
-			],
-			[
-				"add",
-				"addClass	addClass"
-			],
-			[
-				"remo",
-				"removeClass	.removeClass"
-			],
-			[
-				"anim",
-				"animation"
-			],
-			[
-				"wal",
-				"walking"
-			],
-			[
-				"du",
-				"dude"
-			],
-			[
-				"clim",
-				"climbQueue"
-			],
-			[
-				"ground",
-				"groundPos"
-			],
-			[
-				"move",
-				"moveLadder"
-			],
-			[
-				"trunk",
-				"trunkScrollYStep"
-			],
-			[
-				"rep",
-				"repeat-x"
-			],
-			[
-				"leve",
-				"levelLeft"
-			],
-			[
-				"le",
-				"levelLeft"
-			],
-			[
-				"ladd",
-				"ladderLeft"
-			],
-			[
-				"levl",
-				"levelId"
-			],
-			[
-				"el",
-				"elPadding"
-			],
-			[
-				"level",
-				"levelId"
-			],
-			[
-				"dudes",
-				"dudesLevel"
-			],
-			[
-				"dude",
-				"dudeLeft"
-			],
-			[
-				"y",
-				"yScrollEnabled"
 			]
 		]
 	},
@@ -523,15 +523,7 @@
 			"file": "wp-content/themes/misterb/front-page.php",
 			"settings":
 			{
-				"buffer_size": 388,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/js/home.js",
-			"settings":
-			{
-				"buffer_size": 920,
+				"buffer_size": 464,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,34 +531,47 @@
 			"file": "wp-content/themes/misterb/header.php",
 			"settings":
 			{
-				"buffer_size": 2416,
+				"buffer_size": 2571,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/page-team.php",
+			"settings":
+			{
+				"buffer_size": 739,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/js/home.js",
+			"settings":
+			{
+				"buffer_size": 1248,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "wp-content/themes/misterb/library/js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 3863,
+				"buffer_size": 5202,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<?php get_header();\nif (have_posts()) : while (have_posts()) : the_post(); ?>\n\n<div class=\"content\">\n	<div id=\"brand-details\">\n		<?=get_image('logo',1,1,1,NULL,NULL,array('id'=>'brand-logo')); ?>\n		<? $url = get('website'); if ($url) echo '<a id=\"brand-url\" href=\"http://'.get('website').'\" target=\"_blank\">'.get('website').'</a>'; ?>\n		<? $loc = get('location'); if ($loc) echo '<p id=\"brand-location\">'.get('location').'</p>' ?>\n		<p id=\"brand-description\"><?=get_the_content(); ?></p>\n	</div>\n	<?\n		$image = get_image('detail_image',1,1,1,NULL,NULL,array('id'=>'brand-detail'));\n		if ($image) { echo $image; }\n		else { echo get_image('slideshow',1,1,1,NULL,NULL,array('id'=>'brand-detail')); }\n	?>\n	<!-- TODO: List articles that have the brand as a tag -->\n</div>\n\n<?php endwhile; endif;\nget_footer(); ?>",
-			"file": "wp-content/themes/misterb/single-brand.php",
-			"file_size": 826,
-			"file_write_time": 130282427760283193,
+			"file": "wp-content/themes/misterb/template-full.php",
 			"settings":
 			{
-				"buffer_size": 807,
+				"buffer_size": 246,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wp-content/themes/misterb/style.css",
+			"file": "wp-content/themes/misterb/footer.php",
 			"settings":
 			{
-				"buffer_size": 8038,
+				"buffer_size": 1048,
 				"line_ending": "Unix"
 			}
 		},
@@ -574,23 +579,15 @@
 			"file": "wp-content/themes/misterb/functions.php",
 			"settings":
 			{
-				"buffer_size": 6191,
+				"buffer_size": 7889,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/misterb/library/bones.php",
+			"file": "wp-content/themes/misterb/style.css",
 			"settings":
 			{
-				"buffer_size": 13424,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/style.css.bxslider",
-			"settings":
-			{
-				"buffer_size": 8015,
+				"buffer_size": 9604,
 				"line_ending": "Unix"
 			}
 		}
@@ -598,9 +595,45 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 357.0,
 		"selected_items":
 		[
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"comm sub",
+				"Snippet: Comment - Subsection comment"
+			],
+			[
+				"subset",
+				"Snippet: Comment - Subsection comment"
+			],
+			[
+				"comm",
+				"Snippet: Comment - Subsection comment"
+			],
+			[
+				"comment",
+				"Snippet: Comment - Full section comment"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -642,10 +675,6 @@
 				"Snippet: Comment - Section header comment"
 			],
 			[
-				"reind",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"commfoot",
 				"Snippet: Comment - Section footer comment"
 			],
@@ -662,10 +691,6 @@
 				"Snippet: Comment - Section footer comment"
 			],
 			[
-				"comment",
-				"Snippet: Comment - Section header comment"
-			],
-			[
 				"commen",
 				"Snippet: Comment - Subsection comment"
 			],
@@ -678,10 +703,6 @@
 				"Set Syntax: XML"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -692,10 +713,6 @@
 			[
 				"word",
 				"Word Wrap: Toggle"
-			],
-			[
-				"js",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"rein",
@@ -838,10 +855,6 @@
 				"HTML: Wrap Selection With Tag"
 			],
 			[
-				"rei",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"reinde",
 				"Indentation: Reindent Lines"
 			],
@@ -850,7 +863,7 @@
 				"Indentation: Reindent Lines"
 			]
 		],
-		"width": 528.0
+		"width": 504.0
 	},
 	"console":
 	{
@@ -867,30 +880,38 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/functions.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/bones.php",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/home.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/js/scripts.js",
+		"/C/wamp/www/misterbclothing.dev/wp-config.php",
+		"/C/wamp/www/misterbclothing.dev/wp-cron.php",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/MarkdownPreview.sublime-settings",
+		"/C/Users/Phil/AppData/Local/Google/Chrome/Application/32.0.1700.6/Extensions/external_extensions.json",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/README.md",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/CHANGELOG.md",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.carousel.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/style.css.bxslider",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.custom.min.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-brand.php",
 		"/C/wamp/www/localhost/wordpress/wp-content/themes/fungblat/library/bones.php",
 		"/C/wamp/www/localhost/wordpress/wp-content/themes/fungblat/functions.php",
 		"/C/wamp/www/tumblr.dev/groupscrew/index.php",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/C/Program Files (x86)/Git/etc/gitconfig",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.min.js",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.carousel.js",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/jquery.cycle2.custom.min.js",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/custom-post-type.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/functions.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/bones.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/style.css",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Phil/AppData/Local/Temp/Temp1_carouFredSel-6.2.1.zip/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js",
 		"/C/Users/Phil/AppData/Local/Temp/Temp1_carouFredSel-6.2.1.zip/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/!questions.tasks",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/PHP/print_r.sublime-snippet",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-team.php",
 		"/C/wamp/www/misterbclothing.dev/misterbclothing.sublime-project",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/home.js",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/js/scripts.js",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-full.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-brand.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-custom.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-event.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-events.php",
@@ -986,15 +1007,7 @@
 		"/C/Users/Phil/Dropbox/School/13F/ID 2/id2classfolder/thom/benandjerrys/header.php",
 		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/header 2.php",
 		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/style.css",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/theme.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/option.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/page.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/custom-blog-page.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/single.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/index 2.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/http.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/functions.wp-styles.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/formatting.php"
+		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/theme.php"
 	],
 	"find":
 	{
@@ -1013,6 +1026,40 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1",
+			"my_attachments",
+			"title",
+			"wp_title",
+			"container",
+			"current",
+			"header-top",
+			"header-otp",
+			"-webkit-",
+			"30px",
+			"20px",
+			"count",
+			"2",
+			"background-color",
+			"header",
+			"banner",
+			"prepend",
+			"append",
+			"direction",
+			"‘",
+			"’",
+			"' ",
+			"my_attachments",
+			"'",
+			"carouselnav",
+			"append",
+			"detach",
+			"detached",
+			"$(brand_logos[i]).isVisible()",
+			"brand_logos",
+			"brands-pager-images",
+			"currSlide",
+			"enque",
+			"img",
 			"page-nav",
 			"page",
 			"\\",
@@ -1106,41 +1153,7 @@
 			"opacity",
 			"visibility",
 			"25s",
-			"after",
-			"|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)",
-			"bottom",
-			"border",
-			"000000",
-			"$this",
-			"$(this)",
-			"$.",
-			"queue",
-			"quque",
-			"h3",
-			"console.log",
-			"imagecontainer",
-			"1s",
-			"25s",
-			"thumbMargin",
-			".2s",
-			"out",
-			"ease",
-			"linear",
-			"ease-in",
-			"out",
-			".fancybox",
-			"FNumber",
-			"ExposureTime",
-			"ApertureFNumber",
-			"$imginfo['COMPUTED']",
-			"imginfo",
-			"FNumber",
-			"imgtitle",
-			"\\",
-			"titleFormat",
-			"title-inside",
-			".fancybox-title-inside-wrap .exif li {",
-			"title-inside-wrap"
+			"after"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1173,7 +1186,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1181,15 +1194,15 @@
 					"file": "wp-content/themes/misterb/front-page.php",
 					"settings":
 					{
-						"buffer_size": 388,
+						"buffer_size": 464,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								388,
-								388
+								60,
+								263
 							]
 						],
 						"settings":
@@ -1205,23 +1218,50 @@
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/misterb/js/home.js",
+					"file": "wp-content/themes/misterb/header.php",
 					"settings":
 					{
-						"buffer_size": 920,
+						"buffer_size": 2571,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								557,
-								557
+								1633,
+								1641
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 150.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/misterb/page-team.php",
+					"settings":
+					{
+						"buffer_size": 739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								329,
+								329
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1231,46 +1271,46 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "wp-content/themes/misterb/header.php",
+					"buffer": 3,
+					"file": "wp-content/themes/misterb/js/home.js",
 					"settings":
 					{
-						"buffer_size": 2416,
+						"buffer_size": 1248,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2058,
-								2058
+								444,
+								444
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 280.0,
+						"translation.x": 64.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "wp-content/themes/misterb/library/js/scripts.js",
 					"settings":
 					{
-						"buffer_size": 3863,
+						"buffer_size": 5202,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2373,
-								2373
+								1586,
+								1586
 							]
 						],
 						"settings":
@@ -1285,19 +1325,45 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "wp-content/themes/misterb/single-brand.php",
+					"buffer": 5,
+					"file": "wp-content/themes/misterb/template-full.php",
 					"settings":
 					{
-						"buffer_size": 807,
+						"buffer_size": 246,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								696,
-								696
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/misterb/footer.php",
+					"settings":
+					{
+						"buffer_size": 1048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
 							]
 						],
 						"settings":
@@ -1312,104 +1378,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "wp-content/themes/misterb/style.css",
-					"settings":
-					{
-						"buffer_size": 8038,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6359,
-								6359
-							],
-							[
-								6446,
-								6446
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3173.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "wp-content/themes/misterb/functions.php",
 					"settings":
 					{
-						"buffer_size": 6191,
+						"buffer_size": 7889,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								689,
-								689
+								3087,
+								3087
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 140.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "wp-content/themes/misterb/library/bones.php",
-					"settings":
-					{
-						"buffer_size": 13424,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5710,
-								5710
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1680.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 8,
-					"file": "wp-content/themes/misterb/style.css.bxslider",
+					"file": "wp-content/themes/misterb/style.css",
 					"settings":
 					{
-						"buffer_size": 8015,
+						"buffer_size": 9604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6462,
-								6331
+								8199,
+								8199
 							]
 						],
 						"settings":
@@ -1418,7 +1431,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3201.0,
+						"translation.y": 5010.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1443,11 +1456,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.443533697632,
 			1.0
 		],
 		"rows":
@@ -1462,6 +1482,10 @@
 		"height": 152.0
 	},
 	"output.git":
+	{
+		"height": 94.0
+	},
+	"output.markdown":
 	{
 		"height": 94.0
 	},

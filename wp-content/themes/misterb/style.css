@@ -80,7 +80,8 @@ Author URI: http://www.psenzler.com
 	-webkit-padding-end: 0;
 }
 body {
-	background-color: #E8EBED;
+	/*background-color: #E8EBED;*/
+	background-color: #ffffff;
 	font-family: 'eurostile', sans-serif;
 	margin: 0 auto;
 	
@@ -89,7 +90,7 @@ body {
 div.content {
 	position: relative;
 	width: 980px;
-	margin: 160px auto 0 auto;
+	margin: 200px auto 100px auto;
 }
 a, a:visited, a:active {
 	text-decoration: none;
@@ -118,23 +119,22 @@ header {
 	width: 100%; /* full-width - padding */
 	position: fixed;
 	top: 0;
-	z-index: 80;
 	background-color: #f9f9f9;
+	z-index: 200;
 	padding-top: 20px;
+	box-shadow: 0 0 4px #444444;
 }
 header #header-top {
-	width: 1200px;
+	width: 980px;
 	margin: 0 auto;
-}
-#logo {
-	margin-left: 50px;
-}
-#logo img {
-	vertical-align: -15px;
+	position: relative;
 }
 nav {
 	display: inline-block;
 	font-family: 'eurostile';
+	position: absolute;
+	top: 15px;
+	right: 0;
 }
 nav ul {
 	list-style: none;
@@ -173,17 +173,21 @@ nav li.current-menu-item:hover a {
 }
 #brands-pager {
 	z-index: 90;
-	background-color: #fff;
+	background-color: #ffffff;
 	/* width: 1160px; full width - padding */
 	width: 100% !important;
 	padding-bottom: 4px;
 	margin-top: 25px;
-	-webkit-transition: background-color 150ms ease;
-	   -moz-transition: background-color 150ms ease;
-	    -ms-transition: background-color 150ms ease;
-	     -o-transition: background-color 150ms ease;
-	        transition: background-color 150ms ease;
 	white-space: nowrap;
+	position: relative;
+}
+#brands-pager-images {
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 1px solid #666666;
+	border-width: 0;
+	position: relative;
 }
 #brands-pager-images a {
 	display: inline-block;
@@ -192,26 +196,39 @@ nav li.current-menu-item:hover a {
 	border-top: 3px solid #fff;
 	position: relative;
 }
+#brands-pager-images a:first-child {
+	margin-left: 0;
+}
 #brands-pager-images a.active, #brands-pager-images a:hover {
 	border-top: 3px solid #055067;
 }
 
 #brands-pager .pager-nav {
 	position: absolute;
-	top: 60px;
-	height: 35px;
-	width: 35px;
-	line-height: 50px;
-	padding: 0 10px;
+	top: 18px;
+	height: 16px;
+	width: 16px;
 	cursor: pointer;
+	background-image: url('images/icons-arrows.png');
+	background-repeat: no-repeat;
 }
 #brands-pager .pager-nav#prev {
-	left: 0;
+	left: 20px;
 	text-align: left;
+	background-position: bottom left;
+}
+#brands-pager .pager-nav#prev:hover {
+	background-position: bottom right;
 }
 #brands-pager .pager-nav#next {
-	right: 0;
+	right: 20px;
 	text-align: right;
+	float: right;
+	background-position: top left;
+}
+
+#brands-pager .pager-nav#next:hover {
+	background-position: top right;
 }
 /*-----  End of Header  ------*/
 
@@ -220,19 +237,23 @@ nav li.current-menu-item:hover a {
 ==============================*/
 
 footer {
-	border-top: 1px solid #000000;
-	margin-top: 50px;
-	padding: 0 10%;
+	border-top: 1px solid #555555;
+	padding-top: 20px;
+	padding-bottom: 50px;
 	white-space: nowrap;
+	background-color: #f9f9f9;
 }
-
-footer div {
+footer .container {
+	width: 980px;
+	margin: 0 auto;
+}
+footer .container div {
 	display: inline-block;
-	margin-left: 110px;
+	margin-left: 80px;
 	margin-top: 10px;
 	vertical-align: top;
 }
-footer div:first-child {
+footer .container div:first-child {
 	margin-left: 0;
 }
 
@@ -270,12 +291,18 @@ footer input {
 }
 #home-description {
 	width: 980px;
-	margin: 20px auto;
+	margin: 50px auto;
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+	        column-count: 2;
+	-webkit-column-gap: 30px;
+	   -moz-column-gap: 30px;
+	        column-gap: 30px;
 }
 /*-----  End of Home Page  ------*/
 
 /*======================================
-=            Page: Brand Details             =
+=         Page: Brand Details          =
 ======================================*/
 
 .single-brand #brand-details {
@@ -308,10 +335,68 @@ footer input {
 
 /*-----  End of Page: Brand Details  ------*/
 
+/*============================
+=         Page: Team         =
+============================*/
+.page-id-11 .member {
+	position: relative;
+	display: inline-block;
+	width: 299px;
+	vertical-align: top;
+	margin-left: 35px; 
+	margin-bottom: 50px;
+}
+.page-id-11 .member:first-child,
+.page-id-11 .member:nth-child(4n) {
+	margin-left: 0;
+}
+.page-id-11 .header * {
+	font-size: 16px;
+	font-weight: normal;
+}
+.page-id-11 .header div {
+	display: inline-block;
+	vertical-align: top;
+	height: 70px;
+}
+.page-id-11 .member img {
+	margin-right: 8px;
+}
+.page-id-11 .name {
+	position: absolute;
+	top: 0;
+	line-height: 18px;
+}
+.page-id-11 .name span {
+	display: block;
+}
+.page-id-11 .name-first {
+	font-family: 'eurostilebold';
+} 
+.page-id-11 .name-last {
+	font-family: 'eurostile';
+}
+.page-id-11 .header h2 {
+	position: absolute;
+	top: 50px;
+}
+.page-id-11 .member p {
+	float: left;
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+/*-----  End of Page: Team  ------*/
+
+
+
 /*===============================================
 =           Template: Full Width Page           =
 ================================================*/
-
+.page-template-template-full-php .content {
+	/*margin-top: 50px;*/
+}
 .page-template-template-full-php .content h1 {
 	font-size: 16px;
 	font-family: 'eurostilebold';

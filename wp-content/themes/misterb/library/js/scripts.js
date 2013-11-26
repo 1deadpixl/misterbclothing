@@ -24,16 +24,63 @@ if (!window.getComputedStyle) {
 	}
 }
 
-// Horizontally distribute elements in their parent container
-jQuery.fn.extend({ distHoriz:
+$ = jQuery;
+
+$.fn.extend({ distHoriz:  // Horizontally distribute elements in their parent container
 	function() {
-		$ = jQuery;
 		var totalWidth = 0;
 		numBrands = $(this).each(function(){ totalWidth += $(this).width() }).length;
 		var eachLeftMargin = ($(this).parent('div').width() - totalWidth)/(numBrands+1);
 		$(this).each(function() { $(this).css('marginLeft',eachLeftMargin+'px'); });
+	},
+	isVisible: //returns true if the element is completely within the viewport (note: doesn't look at left side)
+	function() {
+		if (this.position().left + this.outerWidth() <= this.parent().width()) {
+			console.log(this.position().left);
+			return true;
+		}
+		else
+			return false;
 	}
 });
+
+function changePager(dirORel) { // change pages either 'forward', 'backward' or place a specific el on the left
+	brand_logos = $('#brands-pager-images a');
+
+	// count x number of brand of off-page brands and check if they'll fit in the container div, if not pop until they do.
+
+	if (dirORel == 'forward') {
+		append = new Array();
+		i = 0;
+		while ($(brand_logos[i]).isVisible()) {
+			append.push(brand_logos[i]);
+			i++;
+		}
+		$(append).each(function() {
+			$(this).detach().appendTo('#brands-pager-images');
+		});
+	} else if (dirORel == 'backward') {
+		prepend = new Array();
+		i = brand_logos.length-1;
+		while (!($(brand_logos[i]).isVisible())) {
+			prepend.push(brand_logos[i]);
+			i--;
+		}
+		$(prepend).each(function() {
+			$(this).detach().prependTo('#brands-pager-images');
+		});
+	} else {
+		append = new Array();
+		i = 0;
+		while (!($(brand_logos[i]).is(dirORel))) {
+			append.push(brand_logos[i]);
+			i++;
+		}
+		$(append).each(function() {
+			$(this).detach().appendTo('#brands-pager-images');
+		});
+	}
+}
 
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
@@ -89,12 +136,16 @@ jQuery(document).ready(function($) {
 		debug:  	true
 	});*/
 
-	$('#brands-pager').cycle({
-		slideActiveClass: 	'active',
-		log:  				true
+		//brands pager
+	$('.pager-nav#next').click(function() {
+		console.log('forward');
+		changePager('forward');
 	});
-	$('#brands-pager-images img').hover(function(){
-	    $('brands-slideshow').cycle('goto', $('#brands-pager').data('cycle.API').getSlideIndex(this));
+	$('.pager-nav#prev').click(function() {
+		changePager('backward');
+	});
+	$('#brands-pager-images a').click(function (event) {
+		window.location = this.href;
 	});
  
 }); /* end of as page load scripts */
