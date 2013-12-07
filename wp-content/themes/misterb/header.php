@@ -41,23 +41,20 @@
 	<body <?php body_class(); ?>>
 			<header role="banner">
 				<div id="header-top">
-					<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php bloginfo('name'); ?>"><img src="<?=FILES?>/images/logo.png" alt="<?php bloginfo('name'); ?>"></a>
+					<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php bloginfo('name'); ?>"><img src="<?=FILES?>/images/logo.png" alt="<?php bloginfo('name'); ?>" width="171" height="50"></a>
 					<nav role="navigation">
 						<?php bones_main_nav(); ?>
 					</nav>
 				</div>
-				<div id="brands-pager">
-					<div class="pager-nav" id="prev"></div>
-					<div id="brands-pager-images">
-					<!-- center a fixed number of brand logos. modify js to check if the fixed number fits, if not -1 until they do -->
-					<?php
-					foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $index=>$brand) {
-						echo '<a data-slide-index="'.$index.'" href="'.get_permalink($brand->ID).'" title="'.$brand->post_title.'">';
-						echo get_the_post_thumbnail($brand->ID,'full', array('alt'=>$brand->post_title));
-						echo '</a>';
-					}
-					?>
-					</div>
-					<div class="pager-nav" id="next"></div>
-				</div>
-			</header> <?php // end header ?>
+				
+			</header>
+			<div id="brands-pager">
+				<?php
+				foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $index=>$brand) {
+					echo '<a data-slide-index="'.$index.'" href="'.get_permalink($brand->ID).'" title="'.$brand->post_title.'">';
+					echo get_the_post_thumbnail($brand->ID,'full', array('alt'=>$brand->post_title));
+					echo '</a>';
+				}
+				?>
+			</div>
+<?php // end header ?>

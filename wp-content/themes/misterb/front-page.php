@@ -10,11 +10,8 @@ get_header();
 </div>
 <div id="home-container">
 	<div id="home-description">
-		<?php
-		echo get_post(get_page_by_title('home'))->post_content;
-		?>
+		<?php echo get_post(get_page_by_title('home'))->post_content; ?>
 	</div>
 </div>
-
 
 <?php get_footer(); ?>

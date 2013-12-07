@@ -129,6 +129,10 @@ function bones_scripts_and_styles() {
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
+		// jQuery easings add-on
+		wp_register_script( 'jquery-easing', get_stylesheet_directory_uri() . '/library/js/libs/jquery.easing.js', array('jquery'), '', true);
+
+
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/style.css', array(), '', 'all' );
 
@@ -143,14 +147,12 @@ function bones_scripts_and_styles() {
 		//adding scripts file in the footer
 		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
-		//carousel for #nav-brands
-		//wp_register_script('caroufredsel', get_stylesheet_directory_uri().'/library/js/libs/jquery.carouFredSel-6.2.1-packed.js', array('jquery'), '', true);
-
 		//Cycle2
-		wp_register_script('cycle-js', get_stylesheet_directory_uri().'/js/jquery.cycle2.custom.min.js',array('jquery'),'',true);
+		wp_register_script('plugins-js', get_stylesheet_directory_uri().'/library/js/plugins.js',array('jquery'),'',true);
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
+		wp_enqueue_script( 'jquery-easing' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
@@ -163,13 +165,12 @@ function bones_scripts_and_styles() {
 		*/
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
-		//wp_enqueue_script( 'caroufredsel' );
-		wp_enqueue_script( 'cycle-js' );
+		wp_enqueue_script( 'plugins-js' );
 
 		if (is_page('home')) {
 			//wp_register_script( 'easing-js', get_stylesheet_directory_uri() . '/js/bxslider/extra/jquery.easing.1.3.js', array( 'jquery' ), '', true );
 			//wp_register_script( 'bxslider-js', get_stylesheet_directory_uri() . '/js/bxslider/jquery.bxslider.min.js', array( 'jquery', 'easing-js' ), '', true );
-			wp_register_script( 'home-js', get_stylesheet_directory_uri() . '/js/home.js', array( 'jquery','cycle-js' ), '', true );
+			wp_register_script( 'home-js', get_stylesheet_directory_uri() . '/js/home.js', array( 'jquery','plugins-js' ), '', true );
 
 			//wp_enqueue_script( 'easing-js' );
 			//wp_enqueue_script( 'bxslider-js' );
@@ -192,15 +193,15 @@ function bones_theme_support() {
 	set_post_thumbnail_size(125, 125, true);
 
 	// wp custom background (thx to @bransonwerner for update)
-	add_theme_support( 'custom-background',
-		array(
-		'default-image' => '',  // background image default
-		'default-color' => '', // background color default (dont add the #)
-		'wp-head-callback' => '_custom_background_cb',
-		'admin-head-callback' => '',
-		'admin-preview-callback' => ''
-		)
-	);
+	// add_theme_support( 'custom-background',
+	// 	array(
+	// 	'default-image' => '',  // background image default
+	// 	'default-color' => '', // background color default (dont add the #)
+	// 	'wp-head-callback' => '_custom_background_cb',
+	// 	'admin-head-callback' => '',
+	// 	'admin-preview-callback' => ''
+	// 	)
+	// );
 
 	// rss thingy
 	add_theme_support('automatic-feed-links');
@@ -208,19 +209,19 @@ function bones_theme_support() {
 	// to add header image support go here: http://themble.com/support/adding-header-background-image-support/
 
 	// adding post format support
-	add_theme_support( 'post-formats',
-		array(
-			'aside',             // title less blurb
-			'gallery',           // gallery of images
-			'link',              // quick link to other site
-			'image',             // an image
-			'quote',             // a quick quote
-			'status',            // a Facebook like status update
-			'video',             // video
-			'audio',             // audio
-			'chat'               // chat transcript
-		)
-	);
+	// add_theme_support( 'post-formats',
+	// 	array(
+	// 		'aside',             // title less blurb
+	// 		'gallery',           // gallery of images
+	// 		'link',              // quick link to other site
+	// 		'image',             // an image
+	// 		'quote',             // a quick quote
+	// 		'status',            // a Facebook like status update
+	// 		'video',             // video
+	// 		'audio',             // audio
+	// 		'chat'               // chat transcript
+	// 	)
+	// );
 
 	// wp menus
 	add_theme_support( 'menus' );

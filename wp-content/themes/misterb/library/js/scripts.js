@@ -33,54 +33,107 @@ $.fn.extend({ distHoriz:  // Horizontally distribute elements in their parent co
 		var eachLeftMargin = ($(this).parent('div').width() - totalWidth)/(numBrands+1);
 		$(this).each(function() { $(this).css('marginLeft',eachLeftMargin+'px'); });
 	},
-	isVisible: //returns true if the element is completely within the viewport (note: doesn't look at left side)
-	function() {
-		if (this.position().left + this.outerWidth() <= this.parent().width()) {
-			console.log(this.position().left);
+	isVisible: //returns true if the element is completely within the viewport (note: doesn't check left edge of viewport)
+	function(parent) {
+		if (parent != undefined) { parent = $(parent); }
+		else { this.parent(); }
+		console.log(this.offset().left);
+		if ((this.offset().left-parent.offset().left) + this.outerWidth(true) <= parent.width())
 			return true;
-		}
 		else
 			return false;
+	},
+	fitChildren: //fits the children of a container into it so that none are cut off
+				 // maxWidth: maximum desired width of container
+				 // startIndex: element index to start counting fitting elements
+				 // returnToOutput: return new width instead of resizing
+	function(maxWidth, startIndex, returnToOutput) {
+		var containerWidth = maxWidth;
+		startIndex = startIndex || 0;
+		children = this.children();
+		marginLeft = parseInt($(children[1]).css('marginLeft')); //check if the non-first element has a margin, if so assume it's the same for all elements
+		newWidth = 0;
+		containerFull = false;
+		children.each(function(i) {
+			if (i >= startIndex) {
+				if (newWidth+$(this).outerWidth()+marginLeft < containerWidth && !containerFull) {
+					newWidth += $(this).outerWidth()+marginLeft;
+				} else { containerFull = true; }
+			}
+		});
+		newWidth = newWidth-marginLeft
+		if (returnToOutput)
+			return newWidth;
+		else
+			this.css({width: newWidth});
 	}
 });
 
-function changePager(dirORel) { // change pages either 'forward', 'backward' or place a specific el on the left
-	brand_logos = $('#brands-pager-images a');
+// function changePager(dirORel) { // change pages either 'forward', 'backward' or place a specific el on the left
+// 	brand_logos = $('#brands-pager-images a');
 
-	// count x number of brand of off-page brands and check if they'll fit in the container div, if not pop until they do.
+// 	// count x number of brand of off-page brands and check if they'll fit in the container div, if not pop until they do.
 
-	if (dirORel == 'forward') {
-		append = new Array();
-		i = 0;
-		while ($(brand_logos[i]).isVisible()) {
-			append.push(brand_logos[i]);
-			i++;
-		}
-		$(append).each(function() {
-			$(this).detach().appendTo('#brands-pager-images');
-		});
-	} else if (dirORel == 'backward') {
-		prepend = new Array();
-		i = brand_logos.length-1;
-		while (!($(brand_logos[i]).isVisible())) {
-			prepend.push(brand_logos[i]);
-			i--;
-		}
-		$(prepend).each(function() {
-			$(this).detach().prependTo('#brands-pager-images');
-		});
-	} else {
-		append = new Array();
-		i = 0;
-		while (!($(brand_logos[i]).is(dirORel))) {
-			append.push(brand_logos[i]);
-			i++;
-		}
-		$(append).each(function() {
-			$(this).detach().appendTo('#brands-pager-images');
-		});
-	}
-}
+// 	if (dirORel == 'forward') {
+// 		visible = new Array();
+// 		brand_logos.each(function(i) {
+// 			if ($(this).isVisible())
+// 				visible.push(this);
+// 		});
+// 		// newPage = new Array();
+// 		// newPageWidth = 0;
+// 		// pageFull = false;
+// 		// brand_logos.each(function(i) {
+// 		// 	if (!($(this).isVisible())) {
+// 		// 		if (newPageWidth+$(this).outerWidth(true) <= $(window).width()*.95 && !pageFull) {
+// 		// 			newPage.push(this);
+// 		// 			newPageWidth += $(this).outerWidth(true);
+// 		// 			pageFull = false;
+// 		// 		} else { pageFull = true; }
+// 		// 	}
+// 		// });
+// 		// brand_logos.parent().width(newPageWidth);
+// 		brand_logos.animate({left: -1*parseInt($(brand_logos[visible.length]).position().left)+'px'},{
+// 			queue: 'brands-pager',
+// 			easing: 'easeInQuad',
+// 			duration: 750
+// 		});
+		
+// 		brand_logos.queue('brands-pager',function(next){
+// 			// brand_logos.parent().animate({width: brand_logos.parent().fitChildren($(window).width()*.95, visible.length, true)});
+// 			brand_logos.parent().fitChildren($(window).width()*.95, visible.length);
+// 			next();
+// 		});
+// 		brand_logos.queue('brands-pager',function(next){
+// 			$(visible[0]).detach().appendTo('#brands-pager-images');
+// 			visible.shift();
+// 			$(this).css('left',0);
+// 			next();
+// 		});
+// 		brand_logos.dequeue('brands-pager');
+
+// 	} else if (dirORel == 'backward') {
+// 		prepend = new Array();
+// 		i = brand_logos.length-1;
+// 		while (!($(brand_logos[i]).isVisible())) {
+// 			prepend.push(brand_logos[i]);
+// 			i--;
+// 		}
+// 		$(prepend).each(function() {
+// 			$(this).detach().prependTo('#brands-pager-images');
+// 		});
+// 	} else {
+// 		append = new Array();
+// 		i = 0;
+// 		while (!($(brand_logos[i]).is(dirORel))) {
+// 			append.push(brand_logos[i]);
+// 			i++;
+// 		}
+// 		$(append).each(function() {
+// 			$(this).detach().appendTo('#brands-pager-images');
+// 		});
+// 	}
+// }
 
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
@@ -136,22 +189,48 @@ jQuery(document).ready(function($) {
 		debug:  	true
 	});*/
 
-		//brands pager
-	$('.pager-nav#next').click(function() {
-		console.log('forward');
-		changePager('forward');
+	//brands pager
+	// $('.pager-nav#next').click(function() {
+	// 	console.log('forward');
+	// 	changePager('forward');
+	// });
+	// $('.pager-nav#prev').click(function() {
+	// 	changePager('backward');
+	// });
+	$("#brands-pager").smoothDivScroll({
+		autoScrollingMode: "",
+		mousewheelScrolling: "horizontal",
+		touchScrolling: false,
+		manualContinuousScrolling: true,
+		easingAfterHotSpotScrollingDistance: 150,
+		easingAfterHotSpotScrollingDuration: 750,
+		hotSpotSpeedRamp: false,
+		hotSpotScrollingInterval: 2,
+		hotSpotScrollingStep: 10,
+		visibleHotSpotBackgrounds: "hover"
 	});
-	$('.pager-nav#prev').click(function() {
-		changePager('backward');
-	});
-	$('#brands-pager-images a').click(function (event) {
+	$('#brands-pager .scrollableArea a').click(function (event) {
 		window.location = this.href;
 	});
  
 }); /* end of as page load scripts */
 
+jQuery(window).load(function() {
+	// $('#brands-pager-images').fitChildren($(window).width()*.95)
+});
+
 jQuery(window).resize(function() {
-	//jQuery('#nav-brands a').distHoriz();
+	// $('#brands-pager-images').fitChildren($(window).width()*.95)
+});
+
+jQuery(window).scroll(function() {
+	if (!($('body').hasClass('home'))) {  //don't change header for home page
+		if ($(window).scrollTop() <= 15) {
+			$('header, #brands-pager').removeClass('scrolling');
+		} else {
+			$('header, #brands-pager').addClass('scrolling');
+		}
+	}
 });
 
 /*! A fix for the iOS orientationchange zoom bug.

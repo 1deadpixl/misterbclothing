@@ -83,7 +83,7 @@ function media_kit( $attachments )
                             'logo_r'  => 'Raster Logo'
                         )
                     )
-    ),
+    )
   );
   $args = array(
     'label'         => 'Kit Files',
@@ -110,11 +110,96 @@ function media_kit_location_limit( $val )
 add_filter( 'attachments_location_media_kit', 'media_kit_location_limit' );
 
 
+//attachments modules for 'Us in the Media' page
+//Print Ads
+function press_ads( $attachments )
+{
+  $fields = array(
+    array(
+      'name'      => 'title',
+      'type'      => 'text',
+      'label'     => __( 'Title', 'attachments' )
+    ),
+    array(
+      'name'      => 'publication',
+      'type'      => 'text',
+      'label'     => __( 'Publication', 'attachments' ),
+    ),
+    array(
+      'name'      => 'date',
+      'type'      => 'text',
+      'label'     => __( 'Date/Issue', 'attachments' )
+    )
+  );
+  $args = array(
+    'label'         => 'Print Ads',
+    'post_type'     => 'page',
+    'position'      => 'normal',
+    'priority'      => 'high',
+    'filetype'      => 'image',
+    'append'        => false,
+    'button_text'   => __( 'Attach Files', 'attachments' ),
+    'modal_text'    => __( 'Attach', 'attachments' ),
+    'router'        => 'upload',
+    'fields'        => $fields
+  );
+
+  $attachments->register( 'press_ads', $args );
+}
+add_action( 'attachments_register', 'press_ads' );
+
+//Print Editorials
+function press_editorials( $attachments )
+{
+  $fields = array(
+    array(
+      'name'      => 'title',
+      'type'      => 'text',
+      'label'     => __( 'Title', 'attachments' )
+    ),
+    array(
+      'name'      => 'publication',
+      'type'      => 'text',
+      'label'     => __( 'Publication', 'attachments' ),
+    ),
+    array(
+      'name'      => 'date',
+      'type'      => 'text',
+      'label'     => __( 'Date/Issue', 'attachments' )
+    )
+  );
+  $args = array(
+    'label'         => 'Print Editorials',
+    'post_type'     => 'page',
+    'position'      => 'normal',
+    'priority'      => 'high',
+    'filetype'      => 'image',
+    'append'        => false,
+    'button_text'   => __( 'Attach Files', 'attachments' ),
+    'modal_text'    => __( 'Attach', 'attachments' ),
+    'router'        => 'upload',
+    'fields'        => $fields
+  );
+
+  $attachments->register( 'press_editorials', $args );
+}
+add_action( 'attachments_register', 'press_editorials' );
+
+//only show Press files attachment modules on the 'Us in the Media' page
+function press_files_location_limit( $val )
+{
+    global $post;
+    return ( $post->post_title == 'Us in the Media' ) ? true : false;
+}
+add_filter( 'attachments_location_press_ads', 'press_files_location_limit' );
+add_filter( 'attachments_location_press_editorials', 'press_files_location_limit' );
+
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'press-thumb', 140, 180, false );
+// add_image_size( 'bones-thumb-300', 300, 100, true );
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you

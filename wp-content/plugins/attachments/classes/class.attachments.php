@@ -668,12 +668,13 @@ if( !class_exists( 'Attachments' ) ) :
          */
         function meta_box_init()
         {
-            $nonce_sent = false;
+            
 
             if( !empty( $this->instances_for_post_type ) )
             {
                 foreach( $this->instances_for_post_type as $instance )
-                {
+                {   
+                    $nonce_sent = false;
                     // facilitate more fine-grained meta box positioning than post type
                     $applicable         = apply_filters( "attachments_location_{$instance}", true, $instance );
 

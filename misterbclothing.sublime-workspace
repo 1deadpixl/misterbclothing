@@ -4,8 +4,88 @@
 		"selected_items":
 		[
 			[
+				"wp_en",
+				"wp_enqueue_script"
+			],
+			[
+				"wp_",
+				"wp_register_script"
+			],
+			[
 				"margin",
-				"margin-right"
+				"marginLeft"
+			],
+			[
+				"lo",
+				"load	.load"
+			],
+			[
+				"w",
+				"width	.width"
+			],
+			[
+				"star",
+				"startIndex"
+			],
+			[
+				"appen",
+				"append	.append"
+			],
+			[
+				"fir",
+				"fitChildren"
+			],
+			[
+				"new",
+				"newWidth"
+			],
+			[
+				"conta",
+				"containerWidth"
+			],
+			[
+				"last",
+				"lastIndex"
+			],
+			[
+				"cont",
+				"containerWidth"
+			],
+			[
+				"con",
+				"containerWidth"
+			],
+			[
+				"app",
+				"append	.append"
+			],
+			[
+				"newP",
+				"newPageWidth"
+			],
+			[
+				"num",
+				"numOfItems"
+			],
+			[
+				"brand",
+				"brand_logos"
+			],
+			[
+				"sib",
+				"siblingsAll"
+			],
+			[
+				"header",
+				"header-top"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"backgr",
+				"background-color"
 			],
 			[
 				"mar",
@@ -52,10 +132,6 @@
 				"background-position"
 			],
 			[
-				"back",
-				"background-position"
-			],
-			[
 				"rel",
 				"relative"
 			],
@@ -84,16 +160,8 @@
 				"detached"
 			],
 			[
-				"appen",
-				"appendTo	.appendTo()"
-			],
-			[
 				"brands",
 				"brands-pager"
-			],
-			[
-				"brand",
-				"brand_logos"
 			],
 			[
 				"scroll",
@@ -180,10 +248,6 @@
 				"width"
 			],
 			[
-				"w",
-				"width"
-			],
-			[
 				"de",
 				"description"
 			],
@@ -218,10 +282,6 @@
 			[
 				"att",
 				"attachments"
-			],
-			[
-				"wp_en",
-				"wp_enqueue_scripts"
 			],
 			[
 				"bx",
@@ -336,10 +396,6 @@
 				"birthyr"
 			],
 			[
-				"new",
-				"newObjs"
-			],
-			[
 				"path",
 				"pathbackcount"
 			],
@@ -358,10 +414,6 @@
 			[
 				"n",
 				"none"
-			],
-			[
-				"con",
-				"content"
 			],
 			[
 				"pad",
@@ -460,70 +512,15 @@
 				"background-repeat"
 			],
 			[
-				"backgr",
-				"background-position"
-			],
-			[
 				"background-",
 				"background-image"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"has",
-				"hasClass	.hasClass"
-			],
-			[
-				"border-right",
-				"border-bottom-right-radius"
-			],
-			[
-				"border-righ",
-				"border-right-width"
-			],
-			[
-				"border",
-				"border-width"
-			],
-			[
-				"text-",
-				"text-align"
-			],
-			[
-				"isDude",
-				"isDudeBySwitch"
-			],
-			[
-				"si",
-				"siblings	.siblings()"
-			],
-			[
-				"par",
-				"parseInt"
-			],
-			[
-				"dud",
-				"dudeLeft"
-			],
-			[
-				"cu",
-				"curValue"
-			],
-			[
-				"select",
-				"selected"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<?php \nget_header();\n?>\n<div id=\"brands-slideshow\">\n	<?php\n	foreach(get_posts(array('post_type'=>'brand','orderby'=>'title','order'=>'ASC','posts_per_page'=>-1)) as $brand) {\n		echo get_image('slideshow',1,1,1,$brand->ID,NULL,array('alt'=>$brand->post_title));\n	}\n	?>\n</div>\n<div id=\"home-container\">\n	<div id=\"home-description\">\n		<?php echo get_post(get_page_by_title('home'))->post_content; ?>\n	</div>\n</div>\n\n<?php get_footer(); ?>",
 			"file": "wp-content/themes/misterb/front-page.php",
-			"file_size": 459,
-			"file_write_time": 130299261569273443,
 			"settings":
 			{
 				"buffer_size": 435,
@@ -534,23 +531,23 @@
 			"file": "wp-content/themes/misterb/header.php",
 			"settings":
 			{
-				"buffer_size": 2571,
+				"buffer_size": 2595,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/misterb/page-team.php",
-			"settings":
-			{
-				"buffer_size": 739,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "wp-content/themes/misterb/archive-team.php",
 			"settings":
 			{
-				"buffer_size": 738,
+				"buffer_size": 756,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/archive-service.php",
+			"settings":
+			{
+				"buffer_size": 394,
 				"line_ending": "Windows"
 			}
 		},
@@ -558,7 +555,7 @@
 			"file": "wp-content/themes/misterb/js/home.js",
 			"settings":
 			{
-				"buffer_size": 1248,
+				"buffer_size": 1245,
 				"line_ending": "Windows"
 			}
 		},
@@ -566,7 +563,15 @@
 			"file": "wp-content/themes/misterb/library/js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 5202,
+				"buffer_size": 7495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/library/bones.php",
+			"settings":
+			{
+				"buffer_size": 13405,
 				"line_ending": "Unix"
 			}
 		},
@@ -574,15 +579,23 @@
 			"file": "wp-content/themes/misterb/functions.php",
 			"settings":
 			{
-				"buffer_size": 7889,
+				"buffer_size": 9540,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/misterb/template-full.php",
+			"settings":
+			{
+				"buffer_size": 246,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "wp-content/themes/misterb/style.css",
 			"settings":
 			{
-				"buffer_size": 9748,
+				"buffer_size": 12065,
 				"line_ending": "Unix"
 			}
 		}
@@ -590,9 +603,33 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 357.0,
+		"height": 334.0,
 		"selected_items":
 		[
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"comm",
+				"Snippet: Comment - Subsection comment"
+			],
+			[
+				"format",
+				"Clientside Format Javascript/CSS"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javasc",
+				"Clientside Lint Javascript/CSS"
+			],
+			[
+				"javasr",
+				"Clientside Lint Javascript/CSS"
+			],
 			[
 				"reind",
 				"Indentation: Reindent Lines"
@@ -607,10 +644,6 @@
 			],
 			[
 				"subset",
-				"Snippet: Comment - Subsection comment"
-			],
-			[
-				"comm",
 				"Snippet: Comment - Subsection comment"
 			],
 			[
@@ -704,10 +737,6 @@
 			[
 				"packa",
 				"Package Control: List Packages"
-			],
-			[
-				"word",
-				"Word Wrap: Toggle"
 			],
 			[
 				"rein",
@@ -842,10 +871,6 @@
 				"Color picker"
 			],
 			[
-				"format",
-				"Clientside Format Javascript/CSS"
-			],
-			[
 				"wrp",
 				"HTML: Wrap Selection With Tag"
 			],
@@ -858,7 +883,7 @@
 				"Indentation: Reindent Lines"
 			]
 		],
-		"width": 504.0
+		"width": 576.0
 	},
 	"console":
 	{
@@ -875,11 +900,19 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/functions.php",
+		"/C/Users/Phil/Dropbox/School/13F/IxD 1/Weeks 1-7/Prototype/js/jquery-ui-1.8.16.custom.min.js",
+		"/C/Users/Phil/Documents/!Projects/John Matty/Web/dev/horizslider/demo/js/jquery.easing.js",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-team.php",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-full.php",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preview.sublime-settings",
+		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/header.php",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Preview/Preview.sublime-settings",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/PHP/wordpress-get_page.sublime-snippet",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/archive-team.html",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-full.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/footer.php",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/functions.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/library/bones.php",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/js/home.js",
@@ -908,7 +941,6 @@
 		"/C/Users/Phil/AppData/Local/Temp/Temp1_carouFredSel-6.2.1.zip/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1-packed.js",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/!questions.tasks",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/PHP/print_r.sublime-snippet",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-team.php",
 		"/C/wamp/www/misterbclothing.dev/misterbclothing.sublime-project",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/page-custom.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/single-event.php",
@@ -920,9 +952,7 @@
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-brand_details.php",
 		"/C/wamp/bin/php/php5.4.12/php.ini",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/template-brand_details",
-		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/header.php",
 		"/C/wamp/www/misterbclothing.dev/wp-content/themes/misterb/404.php",
-		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/User/Preview.sublime-settings",
 		"/C/Users/Phil/Documents/!Projects/Simon Vetter/20131005.tasks",
 		"/C/xampp/htdocs/misterbclothing.dev/wp-content/themes/misterb/js/bxslider/jquery.bxslider.css",
 		"/C/xampp/htdocs/misterbclothing.dev/wp-content/themes/misterb/library/js/scripts.js",
@@ -997,12 +1027,7 @@
 		"/C/Users/Phil/Documents/Webs/psenzler/portfolio/photography/js/plugins.js",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/Preview/README.md",
 		"/C/Users/Phil/AppData/Roaming/Sublime Text 2/Packages/sublimelint/README.markdown",
-		"/C/Users/Phil/Documents/!Projects/Simon Vetter/Pages/header-new.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/functions.php",
-		"/C/Users/Phil/Documents/!Projects/Simon Vetter/Pages/header.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/header.php",
-		"/C/Users/Phil/Dropbox/School/13F/ID 2/id2classfolder/thom/benandjerrys/header.php",
-		"/C/Users/Phil/AppData/Local/Temp/fz3temp-1/header 2.php"
+		"/C/Users/Phil/Documents/!Projects/Simon Vetter/Pages/header-new.php"
 	],
 	"find":
 	{
@@ -1021,6 +1046,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Media",
+			"media_kit",
+			"regist",
+			"th(true)",
+			"ow).width()*.9",
+			"els",
+			"newPageWidth",
+			"pageFull",
+			"newPageWidth",
+			"lastI",
+			"$(this).outerWidth(true)",
+			"outerWidth",
+			"brands",
+			"quque",
+			"$(this).parent().children()",
+			"page-template-template-full-php",
+			"Template: Full Width Page",
+			"member",
+			"scroll",
+			"console",
+			"margin",
+			"height, top",
+			"height",
+			"top",
+			".1",
+			"all",
+			"top",
+			"height",
+			"duration",
+			"property",
+			"height",
+			"all",
+			"f12",
+			"f1",
+			"F12",
+			"page-header",
 			".page-id-11",
 			"h1",
 			"my_attachments",
@@ -1112,43 +1173,7 @@
 			"ico",
 			"FILES ",
 			"get_template_directory_uri();",
-			"FILES",
-			" /",
-			"450px",
-			"Groove Salad",
-			"xml",
-			"#1AC841",
-			"60827E",
-			"attribute",
-			"e.",
-			"e",
-			"6",
-			"hover",
-			"name",
-			"url('",
-			"console",
-			"Title",
-			"alignHeader",
-			"align",
-			",",
-			"%20",
-			"birth_day",
-			"birth_month",
-			"birth_year",
-			"src=\"css",
-			"=\"css",
-			"fundamental",
-			"'},{\n",
-			"Fundamental",
-			"fundamental",
-			"headerLeftOffset",
-			"header",
-			"header ul",
-			"../",
-			"=\"",
-			"opacity",
-			"visibility",
-			"25s"
+			"FILES"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1181,7 +1206,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1196,8 +1221,8 @@
 						"selection":
 						[
 							[
-								229,
-								229
+								377,
+								377
 							]
 						],
 						"settings":
@@ -1216,15 +1241,15 @@
 					"file": "wp-content/themes/misterb/header.php",
 					"settings":
 					{
-						"buffer_size": 2571,
+						"buffer_size": 2595,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1633,
-								1641
+								1792,
+								1792
 							]
 						],
 						"settings":
@@ -1232,32 +1257,33 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 150.0,
+						"translation.x": 783.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "wp-content/themes/misterb/page-team.php",
+					"file": "wp-content/themes/misterb/archive-team.php",
 					"settings":
 					{
-						"buffer_size": 739,
+						"buffer_size": 756,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								739,
-								0
+								442,
+								442
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1267,24 +1293,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "wp-content/themes/misterb/archive-team.php",
+					"file": "wp-content/themes/misterb/archive-service.php",
 					"settings":
 					{
-						"buffer_size": 738,
+						"buffer_size": 394,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								625,
-								625
+								325,
+								325
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1297,15 +1322,15 @@
 					"file": "wp-content/themes/misterb/js/home.js",
 					"settings":
 					{
-						"buffer_size": 1248,
+						"buffer_size": 1245,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								444,
-								444
+								256,
+								256
 							]
 						],
 						"settings":
@@ -1313,7 +1338,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 64.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1324,15 +1349,15 @@
 					"file": "wp-content/themes/misterb/library/js/scripts.js",
 					"settings":
 					{
-						"buffer_size": 5202,
+						"buffer_size": 7495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1586,
-								1586
+								2323,
+								2323
 							]
 						],
 						"settings":
@@ -1341,25 +1366,52 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 840.0,
+						"translation.y": 968.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "wp-content/themes/misterb/functions.php",
+					"file": "wp-content/themes/misterb/library/bones.php",
 					"settings":
 					{
-						"buffer_size": 7889,
+						"buffer_size": 13405,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3087,
-								3087
+								5283,
+								5283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1650.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/misterb/functions.php",
+					"settings":
+					{
+						"buffer_size": 9540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3761,
+								3765
 							]
 						],
 						"settings":
@@ -1367,7 +1419,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 900.0,
+						"translation.y": 1703.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1375,22 +1427,49 @@
 			]
 		},
 		{
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 7,
-					"file": "wp-content/themes/misterb/style.css",
+					"buffer": 8,
+					"file": "wp-content/themes/misterb/template-full.php",
 					"settings":
 					{
-						"buffer_size": 9748,
+						"buffer_size": 246,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7653,
-								7653
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-content/themes/misterb/style.css",
+					"settings":
+					{
+						"buffer_size": 12065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5116,
+								5116
 							]
 						],
 						"settings":
@@ -1399,7 +1478,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4560.0,
+						"translation.y": 2736.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1435,7 +1514,7 @@
 		"cols":
 		[
 			0.0,
-			0.732544019429,
+			0.646933819065,
 			1.0
 		],
 		"rows":
