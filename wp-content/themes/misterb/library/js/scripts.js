@@ -207,9 +207,9 @@ jQuery(document).ready(function($) {
 		hotSpotSpeedRamp: false,
 		hotSpotScrollingInterval: 2,
 		hotSpotScrollingStep: 10,
-		visibleHotSpotBackgrounds: "hover"
+		visibleHotSpotBackgrounds: ""
 	});
-	$('#brands-pager .scrollableArea a').click(function (event) {
+	$('#brands-pager .scrollableArea a').click(function () {
 		window.location = this.href;
 	});
  

@@ -126,7 +126,7 @@ header {
 }
 header #header-top {
 	width: 980px;
-	/*height: 78px;*/
+	height: 65px;
 	margin: 17px auto;
 	position: relative;
 }
@@ -185,7 +185,7 @@ nav li.current-menu-item:hover a {
 	z-index: 150;
 	width: 100% !important;
 	position: fixed;
-	top: 87px;
+	top: 90px;
 }
 #brands-pager div.scrollWrapper
 {
@@ -228,7 +228,7 @@ nav li.current-menu-item:hover a {
 }
 
 /* Mouse On left hotspot */
-#brands-pager div.scrollingHotSpotLeftVisible
+#brands-pager div.scrollingHotSpotLeft:hover
 {
 	background-position: bottom right;
 	background-color: transparent;
@@ -260,7 +260,7 @@ nav li.current-menu-item:hover a {
 }
 
 /* Mouse On right hotspot */
-#brands-pager div.scrollingHotSpotRightVisible
+#brands-pager div.scrollingHotSpotRight:hover
 {
 	background-position: top right;
 	background-color: transparent;
@@ -273,14 +273,11 @@ nav li.current-menu-item:hover a {
 	display: inline-block;
 	padding-top: 7px;
 	margin-left: 35px;
-	border-top: 3px solid #fff;
+	border-top: none;
 	position: relative;
 	cursor: pointer;
 }
-#brands-pager .scrollableArea a:first-child {
-	margin-left: 0;
-}
-#brands-pager .scrollableArea a.active, #brands-pager .scrollableArea a:hover {
+#brands-pager .scrollableArea a.active, .home #brands-pager .scrollableArea a:hover {
 	border-top: 3px solid #055067;
 }
 
@@ -327,7 +324,7 @@ header.scrolling nav {
 	top: 14px;
 }*/
 #brands-pager.scrolling {
-	top: 50px;
+	top: 54px;
 }
 #brands-pager.scrolling .scrollWrapper {
 	padding-bottom: 2px;
@@ -391,17 +388,17 @@ footer input {
 /*=================================
 =            Home Page            =
 =================================*/
-#brands-slideshow {
+.home #brands-slideshow {
 	position: relative;
 	margin-top: 95px;
 	padding: 0;
 	*zoom: 1;
 }
-#brands-slideshow img {
+.home #brands-slideshow img {
 	width: 100%;
 	display: block;
 }
-#home-description {
+.home #home-description {
 	width: 980px;
 	margin: 50px auto;
 	-webkit-column-count: 2;
@@ -534,6 +531,164 @@ footer input {
 }
 
 /*-----  End of Page: Services  ----*/
+
+/*=============================================
+=            Page: Us in the Media            =
+===============================================*/
+
+
+.page-id-15 .content h1 {
+	font-family: 'eurostiledemi';
+	font-size: 24px;
+	text-align: left;
+	position: relative;
+	top: 30px;
+	left: -180px;
+}
+.page-id-15 .section {
+	position: relative;
+}
+.page-id-15 .section div {
+	display: inline-block;
+	margin-left: 40px;
+	height: 200px;
+	text-align: center;
+	cursor: pointer;
+}
+.page-id-15 .section div:first-child {
+	margin-left: 0;
+}
+
+.page-id-15 .section p {
+	opacity: 0;
+	-webkit-transition: opacity .25s ease;
+	   -moz-transition: opacity .25s ease;
+	    -ms-transition: opacity .25s ease;
+	     -o-transition: opacity .25s ease;
+	        transition: opacity .25s ease;
+}
+.page-id-15 .section div:hover>p {
+	opacity: 1;
+}
+.page-id-15 .section p.title {
+	background-color: rgba(0,28,54,0.8);
+	position: absolute;
+	bottom: 60px;
+	padding: 6px 5px;
+	color: #ffffff;
+	width: 160px;
+	margin-left: 10px;
+	white-space: normal;
+	text-align: left;
+	font-family: 'eurostiledemi';
+}
+.page-id-15 .section .scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+}
+
+.page-id-15 .section .scrollableArea
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+}
+/* Mouse Off left hotspot */
+.page-id-15 .section .scrollingHotSpotLeft
+{
+	position: absolute;
+	top: 85px;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+	z-index: 100;
+		
+	left: 0;
+	text-align: left;
+	background-image: url('images/icons-arrows.png');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	-moz-opacity: 0.6;
+}
+
+/* Mouse On left hotspot */
+.page-id-15 .section .scrollingHotSpotLeft:hover
+{
+	background-position: bottom right;
+	background-color: transparent;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	-moz-opacity: 1;
+	zoom: 1;
+}
+
+/* Mouse Off right hotspot */
+.page-id-15 .section .scrollingHotSpotRight
+{
+	position: absolute;
+	top: 85px;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+	z-index: 100;
+
+	right: -80px;
+	text-align: right;
+	float: right;
+	background-image: url('images/icons-arrows.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	-moz-opacity: 0.6;
+}
+
+/* Mouse On right hotspot */
+.page-id-15 .section .scrollingHotSpotRight:hover
+{
+	background-position: top right;
+	background-color: transparent;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	-moz-opacity: 1;
+	zoom: 1;
+}
+
+
+/*-----  End of Page: Us in the Media  ------*/
+
+
+/*====================================
+=            Page: Events            =
+======================================*/
+
+.post-type-archive-event .event {
+	margin-left: 100px;
+
+}
+.post-type-archive-event .event h1 {
+	font-size: 24px;
+}
+.post-type-archive-event .event .date {
+	font-family: 'eurostilebold';
+	font-size: 20px;
+	position: absolute;
+	left: 0;
+	float: left;
+	text-align: center;
+}
+
+
+/*-----  End of Page: Events  ------*/
+
+
+
 
 /*===============================================
 =           Template: Full Width Page           =
@@ -669,7 +824,7 @@ footer input {
 #fancybox-loading div {
 	width: 44px;
 	height: 44px;
-	background: url('fancybox_loading.gif') center center no-repeat;
+	background: url('images/fancybox/fancybox_loading.gif') center center no-repeat;
 }
 
 .fancybox-close {
@@ -689,7 +844,7 @@ footer input {
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	background: transparent url('blank.gif'); /* helps IE */
+	background: transparent url('images/fancybox/blank.gif'); /* helps IE */
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	z-index: 8040;
 }
@@ -759,7 +914,7 @@ footer input {
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url('fancybox_overlay.png');
+	background: url('images/fancybox/fancybox_overlay.png');
 }
 
 .fancybox-overlay-fixed {
@@ -777,7 +932,7 @@ footer input {
 
 .fancybox-title {
 	visibility: hidden;
-	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
 	position: relative;
 	text-shadow: none;
 	z-index: 8050;
@@ -787,49 +942,72 @@ footer input {
 	visibility: visible;
 }
 
-.fancybox-title-float-wrap {
-	position: absolute;
-	bottom: 0;
-	right: 50%;
-	margin-bottom: -35px;
-	z-index: 8050;
-	text-align: center;
-}
-
-.fancybox-title-float-wrap .child {
-	display: inline-block;
-	margin-right: -100%;
-	padding: 2px 20px;
-	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
-	background: rgba(0, 0, 0, 0.8);
-	-webkit-border-radius: 15px;
-	   -moz-border-radius: 15px;
-	        border-radius: 15px;
-	text-shadow: 0 1px 2px #222;
-	color: #FFF;
-	font-weight: bold;
-	line-height: 24px;
-	white-space: nowrap;
-}
-
-.fancybox-title-outside-wrap {
-	position: relative;
-	margin-top: 10px;
-	color: #fff;
-}
-
-.fancybox-title-inside-wrap {
-	padding-top: 10px;
-}
-
 .fancybox-title-over-wrap {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	color: #fff;
 	padding: 10px;
-	background: #000;
-	background: rgba(0, 0, 0, .8);
+	background: #222;
+	background: rgba(20,20,20,0.7);
+}
+
+
+/*Thumbs helper*/
+#fancybox-thumbs {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 8050;
+}
+
+#fancybox-thumbs.bottom {
+	bottom: 2px;
+}
+
+#fancybox-thumbs.top {
+	top: 2px;
+}
+
+#fancybox-thumbs ul {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#fancybox-thumbs ul li {
+	float: left;
+	padding: 1px;
+	opacity: 0.5;
+}
+
+#fancybox-thumbs ul li.active {
+	opacity: 0.75;
+	padding: 0;
+	border: 1px solid #fff;
+}
+
+#fancybox-thumbs ul li:hover {
+	opacity: 1;
+}
+
+#fancybox-thumbs ul li a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #222;
+	background: #111;
+	outline: none;
+}
+
+#fancybox-thumbs ul li img {
+	display: block;
+	position: relative;
+	border: 0;
+	padding: 0;
+	max-width: none;
 }
 
 /*Retina graphics!*/

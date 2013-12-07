@@ -168,13 +168,11 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'plugins-js' );
 
 		if (is_page('home')) {
-			//wp_register_script( 'easing-js', get_stylesheet_directory_uri() . '/js/bxslider/extra/jquery.easing.1.3.js', array( 'jquery' ), '', true );
-			//wp_register_script( 'bxslider-js', get_stylesheet_directory_uri() . '/js/bxslider/jquery.bxslider.min.js', array( 'jquery', 'easing-js' ), '', true );
 			wp_register_script( 'home-js', get_stylesheet_directory_uri() . '/js/home.js', array( 'jquery','plugins-js' ), '', true );
-
-			//wp_enqueue_script( 'easing-js' );
-			//wp_enqueue_script( 'bxslider-js' );
 			wp_enqueue_script( 'home-js' );
+		} elseif (is_page('media')) {
+			wp_register_script( 'media-js', get_stylesheet_directory_uri() . '/js/media.js', array( 'jquery','plugins-js' ), '', true );
+			wp_enqueue_script( 'media-js' );
 		}
 	}
 }

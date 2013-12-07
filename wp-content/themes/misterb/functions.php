@@ -195,10 +195,11 @@ add_filter( 'attachments_location_press_ads', 'press_files_location_limit' );
 add_filter( 'attachments_location_press_editorials', 'press_files_location_limit' );
 
 
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'press-thumb', 140, 180, false );
+add_image_size( 'press-thumb', 140, 180, true );
 // add_image_size( 'bones-thumb-300', 300, 100, true );
 /*
 to add more sizes, simply copy a line from above
