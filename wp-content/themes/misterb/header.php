@@ -39,6 +39,16 @@
 	</head>
 
 	<body <?php body_class(); ?>>
+		<!-- Facebook Like Box Plugin -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- END Facebook Like Box Plugin -->
 			<header role="banner">
 				<div id="header-top">
 					<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow" title="<?php bloginfo('name'); ?>"><img src="<?=FILES?>/images/logo.png" alt="<?php bloginfo('name'); ?>" width="171" height="50"></a>

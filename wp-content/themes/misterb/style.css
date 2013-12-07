@@ -122,7 +122,6 @@ header {
 	background-color: #f9f9f9;
 	z-index: 200;
 	box-shadow: 0 0 5px #444444;
-
 }
 header #header-top {
 	width: 980px;
@@ -136,8 +135,8 @@ header #logo {
 nav {
 	display: inline-block;
 	font-family: 'eurostile';
-	position: relative;
-	top: -15px;
+	position: absolute;
+	top: 15px;
 	right: 0;
 }
 nav ul {
@@ -318,7 +317,7 @@ header.scrolling #logo {
 	top: 5px;
 }
 header.scrolling nav {
-	top: -10px;
+	top: 17px;
 }
 /*header.scrolling #brands-pager .pager-nav {
 	top: 14px;
@@ -356,13 +355,13 @@ footer .container {
 	width: 980px;
 	margin: 0 auto;
 }
-footer .container div {
+footer .container>div {
 	display: inline-block;
 	margin-left: 80px;
 	margin-top: 10px;
 	vertical-align: top;
 }
-footer .container div:first-child {
+footer .container>div:first-child {
 	margin-left: 0;
 }
 
@@ -376,11 +375,27 @@ footer form>* {
 }
 footer input {
 	border: #65868C 1px solid;
-	background-color: #DAE4EB;
+	background-color: #F4F9FB;
 	border-radius: 2px;
 	padding: 3px 6px;
 	width: 190px;
 	margin-bottom: 6px;
+	color: #bbbbbb;
+}
+footer button[type="submit"] {
+	width: 80px;
+	height: 25px;
+	background-color: #efefef;
+	border: solid 1px #65868C;
+	border-radius: 2px;
+	cursor: pointer;
+}
+footer button[type="submit"]:hover {
+	background-color: #D2EEDB;
+}
+footer .fb-like-box {
+	margin-left: -10px;
+	margin-top: -10px;
 }
 
 /*-----  End of Footer  ------*/
@@ -706,6 +721,65 @@ footer input {
 	margin-top: 10px;
 }
 /*-----  End of Page: Events  ------*/
+
+
+/*============================
+=            Blog            =
+============================*/
+
+/*==========  Blog Index Page  ==========*/
+
+.blog .post_excerpt {
+	margin-top: 50px;
+}
+.blog .post_excerpt:first-child {
+	margin-top: 0;
+}
+.blog .post_excerpt h1 {
+	font-family: 'eurostiledemi';
+	font-size: 18px;
+}
+
+/*==========  Single Post Page  ==========*/
+
+.single-post>h1 {
+	font-family: 'eurostiledemi';
+	font-size: 18px;
+	margin-bottom: 50px;
+	margin-left: 300px;
+}
+
+.single-post .content p {
+	margin-top: 15px;
+	margin-left: 300px;
+}
+.single-post .content h1+p {
+	margin-top: 0;
+}
+.single-post .content img {
+	float: left;
+	margin-top: 20px;
+}
+.single-post .related {
+	margin-left: 300px;
+	margin-top: 50px;
+}
+.single-post .related h1 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.single-post .related ul {
+	list-style: none;
+}
+.single-post .related li {
+	display: inline-block;
+	margin-left: 50px;
+}
+.single-post .related li:first-child {
+	margin-left: 0;
+}
+
+/*-----  End of Blog  ------*/
 
 
 

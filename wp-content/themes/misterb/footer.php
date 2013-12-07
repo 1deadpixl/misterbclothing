@@ -22,6 +22,7 @@
 					</div>
 					<div id="facebook">
 						<h1>Connect With Us</h1>
+						<div class="fb-like-box" data-href="https://www.facebook.com/MisterBclothing" data-width="292" data-height="100" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div>
 					</div>
 					<!-- <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p> -->
 				</div>

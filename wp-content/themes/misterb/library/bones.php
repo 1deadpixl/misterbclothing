@@ -40,7 +40,7 @@ function bones_ahoy() {
 	bones_theme_support();
 
 	// adding sidebars to Wordpress (these are created in functions.php)
-	add_action( 'widgets_init', 'bones_register_sidebars' );
+	// add_action( 'widgets_init', 'bones_register_sidebars' );
 	// adding the bones search form (created in functions.php)
 	add_filter( 'get_search_form', 'bones_wpsearch' );
 
@@ -364,7 +364,7 @@ function bones_filter_ptags_on_images($content){
 function bones_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
+	return '&hellip;  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Continue reading ', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
 }
 
 /*

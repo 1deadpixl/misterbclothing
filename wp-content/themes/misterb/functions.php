@@ -200,6 +200,7 @@ add_filter( 'attachments_location_press_editorials', 'press_files_location_limit
 
 // Thumbnail sizes
 add_image_size( 'press-thumb', 140, 180, true );
+add_image_size( 'post-image', 270, 400, true);
 // add_image_size( 'bones-thumb-300', 300, 100, true );
 /*
 to add more sizes, simply copy a line from above
@@ -220,6 +221,18 @@ for the 600 x 100 image:
 You can change the names and dimensions to whatever
 you like. Enjoy!
 */
+
+/************* POST CATEGORIES *********************/
+foreach(get_posts(array('post_type'=>'brand','posts_per_page'=>-1)) as $brand) {
+		$term = $brand->post_title;
+		$taxonomy = 'category';
+		$catarr = array(
+		  'slug' => $brand->post_name);
+		if(!is_term($term, $taxonomy)){
+		  wp_insert_term($term, $taxonomy, $args);
+		}
+	}
+
 
 /************* ACTIVE SIDEBARS ********************/
 
