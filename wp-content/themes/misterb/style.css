@@ -668,9 +668,22 @@ footer input {
 =            Page: Events            =
 ======================================*/
 
+.post-type-archive-event h1.month {
+	font-family: 'eurostilebold';
+	font-size: 24px;
+	margin-top: 75px;
+	margin-bottom: 15px;
+}
+.post-type-archive-event h1.month:first-child {
+	margin-top: 0;
+}
+.post-type-archive-event h1.month+.event {
+	margin-top: 0;
+}
 .post-type-archive-event .event {
 	margin-left: 100px;
-
+	margin-top: 50px;
+	position: relative;
 }
 .post-type-archive-event .event h1 {
 	font-size: 24px;
@@ -679,12 +692,19 @@ footer input {
 	font-family: 'eurostilebold';
 	font-size: 20px;
 	position: absolute;
-	left: 0;
+	left: -100px;
+	top: 0;
 	float: left;
 	text-align: center;
 }
-
-
+.post-type-archive-event .event .time,
+.post-type-archive-event .event .venue {
+	font-family: 'eurostiledemi';
+	font-size: 16px;
+}
+.post-type-archive-event .event p {
+	margin-top: 10px;
+}
 /*-----  End of Page: Events  ------*/
 
 
